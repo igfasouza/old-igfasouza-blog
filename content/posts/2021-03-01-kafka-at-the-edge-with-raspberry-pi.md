@@ -13,22 +13,22 @@ description: How’s the man? 2021/03/01 This is another blog about Raspberry PI
 image: wp/2021/03/sensehat_demo.png
 ---
 
-![](/images/wp/2021/03/sensehat_demo-1024x489.png)
+![](/old-igfasouza-blog/images/wp/2021/03/sensehat_demo-1024x489.png)
 
 **How’s the man?**  
 2021/03/01
 
 This is another blog about Raspberry PI, and today I want to show how I did a simple Kafka cluster demo using Sense Hat & GFX Hat.
 
-If you’re not familiar with Kafka, I suggest you have a look at my previous post [What is Kafka?](/what-is-kafka/) before, and you can have a look at how I created the Kafka cluster [here](/raspberry-pi-kafka-cluster/).
+If you’re not familiar with Kafka, I suggest you have a look at my previous post [What is Kafka?](/old-igfasouza-blog/what-is-kafka/) before, and you can have a look at how I created the Kafka cluster [here](/old-igfasouza-blog/raspberry-pi-kafka-cluster/).
 
 The Sense HAT is an add-on board for Raspberry Pi, tha has an 8×8 RGB LED matrix, a five-button joystick and includes the following sensors: Gyroscope, Accelerometer, Magnetometer, Barometer, Temperature sensor and Relative Humidity sensor.  
-You can learn more about [Sense hat](/sense-hat/) in my previous blog.
+You can learn more about [Sense hat](/old-igfasouza-blog/sense-hat/) in my previous blog.
 
 The GFX HAT is an add-on board for Raspberry Pi, tha has a 128×64 pixel, 2.15″ LCD display with snazzy six-zone RGB backlight and six capacitive touch buttons. GFX HAT makes an ideal display and interface for your headless Pi projects.  
 You can learn more about GFX hat [here](https://shop.pimoroni.com/products/gfx-hat) and check the API [here](https://github.com/pimoroni/gfx-hat).
 
-![](/images/wp/2021/03/hats-1024x395.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/hats-1024x395.jpg)
 
 The idea here is to focus on scenarios where the Kafka clients and the Kafka brokers are running on the edge. This enables edge processing, integration, decoupling, low latency, and cost-efficient data processing.
 
@@ -43,7 +43,7 @@ The idea here is to focus on scenarios where the Kafka clients and the Kafka bro
 
 A Raspberry Pi 2 nodes Kafka cluster, with a Micronaut Kafka producer that gets sense hat data and a Quarkus Kafka consumer that puts the result in a REST that GFX Hat reads using python API.
 
-![](/images/wp/2021/03/diagran-1024x801.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/diagran-1024x801.jpg)
 
 The Micronaut producer gets the Sense Hat humidity, pressure, and temperature values and sends it to a Kafka topic.
 

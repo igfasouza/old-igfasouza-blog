@@ -12,7 +12,7 @@ description: How’s it going there? This post is to show how I created a web ap
 image: wp/2021/05/spring_lcd.jpg
 ---
 
-![](/images/wp/2021/05/spring_lcd.jpg)
+![](/old-igfasouza-blog/images/wp/2021/05/spring_lcd.jpg)
 
 **How’s it going there?**
 
@@ -22,17 +22,17 @@ This post is to show how I created a web app to control an LCD with a Raspberry 
 
 [Thymeleaf](https://www.thymeleaf.org/) is a Java template engine for processing and creating HTML, XML, JavaScript, CSS, and text.
 
-![](/images/wp/2021/05/lcd_example01-1024x365.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/05/lcd_example01-1024x365.jpg)  
 Picture 1: LCD example
 
 I have the ***St7920*** model. St7920 or 12864zw is probably the cheapest 128×64 graphic LCD that you can find.
 
 ## Schematics
 
-![](/images/wp/2021/05/glcd-pinout-683x1024.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/05/glcd-pinout-683x1024.jpg)  
 Picture 2: LCD Schematics
 
-![](/images/wp/2021/05/LCD_raspberry_map-300x164.png)  
+![](/old-igfasouza-blog/images/wp/2021/05/LCD_raspberry_map-300x164.png)  
 Table 1: Raspberry PI PIN and GPIO map
 
 I’m using this [Java API](https://github.com/ribasco/ucgdisplay)
@@ -41,12 +41,12 @@ I’m using this [Java API](https://github.com/ribasco/ucgdisplay)
 
 A simple Spring Boot Thymeleaf app where it shows a form with a 128×64 table. Each table position is the representation of the LCD graphic display. I created an Array of bits with all positions of this table.
 
-![](/images/wp/2021/05/spring_thymeleaf_app01.png)  
+![](/old-igfasouza-blog/images/wp/2021/05/spring_thymeleaf_app01.png)  
 Picture 3: end-to-end flow
 
 The Array button generates an Array of Bits, and preview creates a picture of the result.
 
-![](/images/wp/2021/05/PXL_20210502_193343880-scaled.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/05/PXL_20210502_193343880-scaled.jpg)  
 Picture 4: Shows the form table that represents the 128×64 bits positions
 
 The LCD graphic Display expects an Array of Bytes from the XBM format.  
@@ -88,10 +88,10 @@ You can get the full code on my [GitHub](https://github.com/igfasouza/Spring-Thy
 
 ## Result
 
-![](/images/wp/2021/05/lcd_example02.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/05/lcd_example02.jpg)  
 Picture 5: LCD examples
 
-![](/images/wp/2021/05/lcd_example03.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/05/lcd_example03.jpg)  
 Picture 6: LCD examples
 
 There are some XBM files inside the resources folder and you can follow up on the API example to display these images.

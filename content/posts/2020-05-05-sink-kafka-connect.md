@@ -12,18 +12,18 @@ description: Well? This blog post is part of my series of posts regarding Kafka 
 image: wp/2020/05/sink_kafka_connect.jpg
 ---
 
-![](/images/wp/2020/05/sink_kafka_connect.jpg)
+![](/old-igfasouza-blog/images/wp/2020/05/sink_kafka_connect.jpg)
 
 **Well?**
 
 This blog post is part of my series of posts regarding Kafka Connect.  
 If you’re not familiar with Kafka, I suggest you have a look at some of my previous post;
 
-[What is Kafka?](/what-is-kafka/)  
-[Kafka Connect Overview](/kafka-connect-overview/)  
-[Kafka Connector Architecture](/kafka-connector-architecture/)  
-[Kafka Connect](/kafka-connect/)  
-[Source Kafka Connect](/source-kafka-connect/)
+[What is Kafka?](/old-igfasouza-blog/what-is-kafka/)  
+[Kafka Connect Overview](/old-igfasouza-blog/kafka-connect-overview/)  
+[Kafka Connector Architecture](/old-igfasouza-blog/kafka-connector-architecture/)  
+[Kafka Connect](/old-igfasouza-blog/kafka-connect/)  
+[Source Kafka Connect](/old-igfasouza-blog/source-kafka-connect/)
 
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 
@@ -47,7 +47,7 @@ My example is using OCI functions.
 
 ## 2. Code
 
-![](/images/wp/2020/05/sink_class.jpg)
+![](/old-igfasouza-blog/images/wp/2020/05/sink_class.jpg)
 
 The connector needs extends SinkConnector. Is almost the same from source and you need to implement six methods here.
 

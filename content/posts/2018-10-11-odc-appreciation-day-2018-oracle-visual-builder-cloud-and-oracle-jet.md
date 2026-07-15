@@ -13,7 +13,7 @@ description: 'How’s it going horse? 2018/10/11 Today it’s #ThanksODC day and
 image: wp/2018/10/oracle-developer-community.png
 ---
 
-![](/images/wp/2018/10/oracle-developer-community.png)
+![](/old-igfasouza-blog/images/wp/2018/10/oracle-developer-community.png)
 
 **How’s it going horse?**  
 2018/10/11
@@ -33,7 +33,7 @@ This post idea is going to be divided into three parts;
 1. In the web browser, log in to Oracle Visual Builder Cloud Service.
 2. On the Visual Applications page, click the New button.
 
-![](/images/wp/2018/10/01-300x48.png)
+![](/old-igfasouza-blog/images/wp/2018/10/01-300x48.png)
 
 3. In the Create Application dialog box, enter DublinBus in the Application Name field and Tutorial application in the Description field.
 4. The Application ID text field is automatically populated as you type based on the value you enter in Application Name.
@@ -41,7 +41,7 @@ This post idea is going to be divided into three parts;
 6. Click + Mobile Application (or click the + sign at the top of the tab).
 7. In the Application name field add DublinBus and in the Navigation Style choose none.
 
-![](/images/wp/2018/10/pic01-300x156.jpg)
+![](/old-igfasouza-blog/images/wp/2018/10/pic01-300x156.jpg)
 
 8. Go to Service Connections and create a new one, choose “Define by endpoint”
 
@@ -56,7 +56,7 @@ This post idea is going to be divided into three parts;
 12. Add a table and choose to add data:  
     choose Service Connections and choose the get for you rest API
 
-    ![](/images/wp/2018/10/pic02-300x178.jpg)
+    ![](/old-igfasouza-blog/images/wp/2018/10/pic02-300x178.jpg)
 
     click on next and choose: route, Duetime and origin for Primary key;  
     next and finish.
@@ -68,7 +68,7 @@ This post idea is going to be divided into three parts;
     Add “Reset Variables” and choose bus;  
     Add “Assign Variables” and on the Variables assign the REST to bus;
 
-    ![](/images/wp/2018/10/pic03-300x139.jpg)
+    ![](/old-igfasouza-blog/images/wp/2018/10/pic03-300x139.jpg)
 
 > Oracle Visual Builder Cloud Service[#VBCS](https://twitter.com/hashtag/VBCS?src=hash&ref_src=twsrc%5Etfw) [#oracle](https://twitter.com/hashtag/oracle?src=hash&ref_src=twsrc%5Etfw) DublinBus mobile app [pic.twitter.com/5x3fUwlc0S](https://t.co/5x3fUwlc0S)
 >

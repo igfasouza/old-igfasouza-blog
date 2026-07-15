@@ -11,7 +11,7 @@ description: How goes the battle? It is now possible to run Apache Kafka without
 image: wp/2021/04/kafka-current-proposed-1024x445.png
 ---
 
-![](/images/wp/2021/04/kafka-current-proposed-1024x445.png)
+![](/old-igfasouza-blog/images/wp/2021/04/kafka-current-proposed-1024x445.png)
 
 **How goes the battle?**
 
@@ -19,7 +19,7 @@ It is now possible to run Apache Kafka without Apache ZooKeeper! KRaft [(aka KIP
 
 This is another blog about Kafka and Raspberry PI, where I want to show how I did a simple KRaft test.
 
-If you’re not familiar with Kafka, I suggest you have a look at my previous post [What is Kafka](/what-is-kafka/) and I suggest you check my blog about how I created a [Raspberry PI Kafka cluster](/raspberry-pi-kafka-cluster/).
+If you’re not familiar with Kafka, I suggest you have a look at my previous post [What is Kafka](/old-igfasouza-blog/what-is-kafka/) and I suggest you check my blog about how I created a [Raspberry PI Kafka cluster](/old-igfasouza-blog/raspberry-pi-kafka-cluster/).
 
 First, let’s download the new beta Kafka version.
 
@@ -69,14 +69,14 @@ Depending on each Raspberry Pi version you are using you will need to change the
 | --- | --- |
 | 1 | export KAFKA\_HEAP\_OPTS="-Xmx256M -Xms128M" |
 
-![](/images/wp/2021/04/kafka-1024x583.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/04/kafka-1024x583.jpg)  
 Picture 1: Terminal Logs
 
 And that is it. Now you are ready to play with Kafka without Apache ZooKeeper on your Raspberry PI.
 
 I came up with the idea to use a simple REST interface application to produce and consume Kafka data.
 
-![](/images/wp/2021/04/Screenshot-2021-04-02-at-10.44.48-1024x691.png)  
+![](/old-igfasouza-blog/images/wp/2021/04/Screenshot-2021-04-02-at-10.44.48-1024x691.png)  
 Picture 2: Kafka REST application. Created with excalidraw.com
 
 It can be any webapp, it can use Quarkus, Micronaur, Spring or any other framework and I can run in a simple Raspberry PI zero. With that, I can integrate everything in my house with the Raspberry PI Kafka cluster.

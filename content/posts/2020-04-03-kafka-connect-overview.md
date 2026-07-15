@@ -12,11 +12,11 @@ description: How’s it going horse? If you’re not familiar with Kafka, I sugg
 image: wp/2020/04/01.png
 ---
 
-![](/images/wp/2020/04/01-1024x300.png)
+![](/old-igfasouza-blog/images/wp/2020/04/01-1024x300.png)
 
 **How’s it going horse?**
 
-If you’re not familiar with Kafka, I suggest you have a look at my previous post “[What is Kafka?](/what-is-kafka/)” before.  
+If you’re not familiar with Kafka, I suggest you have a look at my previous post “[What is Kafka?](/old-igfasouza-blog/what-is-kafka/)” before.  
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion. The idea is that I’ll create a series of posts regarding Kafka Connect. **Stay tuned!**
 
 **Table of contents**
@@ -45,11 +45,11 @@ Sometimes you need to process streams of data that are not in your Kafka cluster
 
 If you choose the first option you need to write codes that move your data to the Kafka cluster. Your code must deal with the failure of your application (for example it must store the offset of the last record of tables that are moved to Kafka, so it can continue to copy the records that were not inserted into Kafka), scalability, polling and much more.
 
-![](/images/wp/2020/04/01.jpg)
+![](/old-igfasouza-blog/images/wp/2020/04/01.jpg)
 
 But if you choose the second option you can move data without writing any code. The Kafka Connect does the same job as the first option but in a scalable and fault-tolerant way. The process of copying data from a storage system and move it to Kafka Cluster is so common that Kafka Connect tool is created to address this problem.
 
-![](/images/wp/2020/04/02.jpg)
+![](/old-igfasouza-blog/images/wp/2020/04/02.jpg)
 
 Kafka connectors provide some powerful features. They can be easily configured to route unprocessable or invalid messages to a dead letter queue, apply Single Message Transforms before a message is written to Kafka by a source connector or before it is consumed from Kafka by a sink connector, integrate with Confluent Schema Registry for automatic schema registration and management, and convert data into types such as Avro or JSON. By leveraging existing connectors, developers can quickly create fault-tolerant data pipelines that reliably stream data from an external source into records in Kafka topics or from Kafka topics into an external sink, all with mere configuration and no code!
 
@@ -73,7 +73,7 @@ Workers are a physical concept. They are processes that run inside JVM. Your job
 
 Kafka Connect uses workers for moving data. Workers are just simple Linux (or any other OS) processes. Kafka Connect can create a cluster of workers to make the copying data process scalable and fault tolerant. Workers need to store some information about their status, their progress in reading data from external storage and so on. To store that data, they use Kafka as their storage. Note that Kafka Connect cluster (which is a cluster of workers) is completely different from the Kafka cluster (which is a cluster of Kafka brokers). More workers mean that your copying process is more fault tolerant.
 
-![](/images/wp/2020/04/03-1024x312.jpg)
+![](/old-igfasouza-blog/images/wp/2020/04/03-1024x312.jpg)
 
 **Standalone vs. Distributed Mode**
 

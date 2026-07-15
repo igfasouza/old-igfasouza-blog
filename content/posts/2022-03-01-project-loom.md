@@ -11,13 +11,13 @@ description: Story Horse? Currently, there is no coroutines implementation in Ja
 image: wp/2022/02/loom01.jpeg
 ---
 
-![](/images/wp/2022/03/loom_banner1.png)
+![](/old-igfasouza-blog/images/wp/2022/03/loom_banner1.png)
 
 **Story Horse?**
 
 Currently, there is no coroutines implementation in Java, and Project Loom is a proposal implementation. Is not yet clear when this should be added to Java, but there is a big expectation for Java 19.
 
-Check out my blog about [Coroutines](/coroutines/) for a better understanding.
+Check out my blog about [Coroutines](/old-igfasouza-blog/coroutines/) for a better understanding.
 
 Project Loom is an attempt by the OpenJDK community to introduce a lightweight concurrency construct to Java. The prototypes for Loom so far have introduced a change in the JVM as well as the Java library.
 
@@ -31,7 +31,7 @@ Fibers is similar to Thread, the user implementation should also remain similar,
 A continuation (or co-routine) is a sequence of instructions that can yield and be resumed by the caller at a later stage. Every continuation has an entry point and a yield point. The yield point is where it was suspended. Whenever the caller resumes the continuation, the control returns to the last yield point.  
 It’s important to realize that this suspend/resume now occurs in the language runtime instead of the OS. Therefore, it prevents the expensive context switch between kernel threads.
 
-![](/images/wp/2022/02/loom01.jpeg)  
+![](/old-igfasouza-blog/images/wp/2022/02/loom01.jpeg)  
 Picture 1: https://cr.openjdk.java.net/~rpressler/loom/Loom-Proposal.html
 
 Currently, Java developers are faced with a choice between writing code that’s harmonious with the design of the platform but is not scalable, or writing code that makes efficient use of existing hardware with asynchronous programming and fighting the platform. Project Loom is supposed to break that dilemma through virtual threads.
@@ -44,7 +44,7 @@ Loom has support for a pluggable scheduler to allow developers to experiment wit
 
 In OpenJDK, Java threads are just thin wrappers around OS threads and OS threads are a very precious resource; a modern OS can’t support more than a few thousand active threads at a time.
 
-![](/images/wp/2022/02/fibers.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/fibers.png)  
 Picture 2: Coroutines with Fibers
 
 You can create several Fibers that will be translated in only fill threads and this will be transparent for the user. In this way, you can have better use of the CPU.

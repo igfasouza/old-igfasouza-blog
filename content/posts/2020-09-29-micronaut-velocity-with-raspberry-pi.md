@@ -13,7 +13,7 @@ description: How’s the lad? This post is to show how I created a Micronaut Vel
 image: wp/2020/09/raspberry_micronaut.jpg
 ---
 
-![](/images/wp/2020/09/raspberry_micronaut.jpg)
+![](/old-igfasouza-blog/images/wp/2020/09/raspberry_micronaut.jpg)
 
 **How’s the lad?**
 
@@ -31,13 +31,13 @@ Velocity is a Java-based template engine. It permits anyone to use a simple yet 
 
 <http://velocity.apache.org/>
 
-You can check my blog post about sense hat [here](/sense-hat/)
+You can check my blog post about sense hat [here](/old-igfasouza-blog/sense-hat/)
 
 ## Idea
 
-I started with the idea to do something similar with my [Quarkus Qute 7 segment display demo](/quarkus-qute-with-raspberry-pi/), using Micronaut, but I pivoted a little bit. I end up with a Micronaut Vecolcity interface that provides a way to control the 8×8 Led Matrix from SenseHat.
+I started with the idea to do something similar with my [Quarkus Qute 7 segment display demo](/old-igfasouza-blog/quarkus-qute-with-raspberry-pi/), using Micronaut, but I pivoted a little bit. I end up with a Micronaut Vecolcity interface that provides a way to control the 8×8 Led Matrix from SenseHat.
 
-![](/images/wp/2020/09/IMG-20200928-WA0001.jpg)
+![](/old-igfasouza-blog/images/wp/2020/09/IMG-20200928-WA0001.jpg)
 
 I used this [Java wrapper for Sense Hat](https://github.com/cinci/rpi-sense-hat-java)
 

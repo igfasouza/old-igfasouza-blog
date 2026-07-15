@@ -11,7 +11,7 @@ description: 'What’s the crack jack? Inspired by the code everyday article and
 image: wp/2017/11/code.jpg
 ---
 
-![](/images/wp/2017/11/code.jpg)
+![](/old-igfasouza-blog/images/wp/2017/11/code.jpg)
 
 **What’s the crack jack?**
 

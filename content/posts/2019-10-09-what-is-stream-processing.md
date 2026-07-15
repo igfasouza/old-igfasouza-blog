@@ -13,11 +13,11 @@ description: Hey you! if you’re not familiar with Big Data or Data lake, I sug
 image: wp/2019/10/stream_processing.jpg
 ---
 
-![](/images/wp/2019/10/stream_processing.jpg)
+![](/old-igfasouza-blog/images/wp/2019/10/stream_processing.jpg)
 
 **Hey you!**
 
-if you’re not familiar with Big Data or Data lake, I suggest you have a look at my previous post “[What is Big Data?](/what-is-big-data/)” and “[What is data lake?](/what-is-data-lake/)” before.  
+if you’re not familiar with Big Data or Data lake, I suggest you have a look at my previous post “[What is Big Data?](/old-igfasouza-blog/what-is-big-data/)” and “[What is data lake?](/old-igfasouza-blog/what-is-data-lake/)” before.  
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 
 ## Table of contents
@@ -44,7 +44,7 @@ Stream processing is the act of continuous incorporate new data to compute a res
 
 Streaming is a data distribution technique where data producers write data records into an ordered data stream from which data consumers can read that data in the same order. Here is a simple data streaming diagram illustrating a data producer, a data stream and a data consumer
 
-![](/images/wp/2019/10/data-streaming-introduction-1-1024x163.png)
+![](/old-igfasouza-blog/images/wp/2019/10/data-streaming-introduction-1-1024x163.png)
 
 Each data streaming product makes a certain set of assumptions about the use cases and processing techniques to support. These assumptions leads to certain design choices, which affect what types of stream processing behaviour you can implement with them.
 
@@ -74,7 +74,7 @@ In the cases where a persistent data stream holds the full history of records, c
 
 [Martin Kleppmann](https://martin.kleppmann.com/) is the author of the book “Designing Data Intensive Applications”, and he has some nice papers/presentations;
 
-![](/images/wp/2019/10/book-cover.png)
+![](/old-igfasouza-blog/images/wp/2019/10/book-cover.png)
 
 <https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/>
 
@@ -91,13 +91,13 @@ In the cases where a persistent data stream holds the full history of records, c
 
 Some people call it stream processing. Others call it Event Sourcing or CQRS. Some even call it Complex Event Processing. Sometimes, such self-important buzzwords are just smoke and mirrors, invented by companies who want to sell you stuff. But sometimes, they contain a kernel of wisdom which can really help us design better systems.
 
-![](/images/wp/2019/10/msos_0101-10797c3c8d962beb01da01f5f8913f88-1024x768.png)
+![](/old-igfasouza-blog/images/wp/2019/10/msos_0101-10797c3c8d962beb01da01f5f8913f88-1024x768.png)
 
 The idea of structuring data as a stream of events is nothing new, and it is used in many different fields. Even though the underlying principles are often similar, the terminology is frequently inconsistent across different fields, which can be quite confusing. Although the jargon can be intimidating when you first encounter it, don’t let that put you off; many of the ideas are quite simple when you get down to the core.
 
 **But there’s some Differences.**
 
-![](/images/wp/2019/10/1.png)
+![](/old-igfasouza-blog/images/wp/2019/10/1.png)
 
 In this article you can see some differences and similarities.  
 <https://iwringer.wordpress.com/2015/12/15/cep-vs-streaming-processing-vs-cep-engines-vs-streaming-analytic-engines/>
@@ -106,7 +106,7 @@ In this article you can see some differences and similarities.
 
 if we took that replication stream, and made it a first-class citizen in our data architecture? What if we changed our infrastructure so that the replication stream was not an implementation detail, but a key part of the public interface of the database? What if we turn the database inside out, take the implementation detail that was previously hidden, and make it a top-level concern? What would that look like?
 
-![](/images/wp/2019/10/Untitled-drawing1.jpg)
+![](/old-igfasouza-blog/images/wp/2019/10/Untitled-drawing1.jpg)
 
 ## 3. Typical use cases
 
@@ -136,7 +136,7 @@ Here is a short list of well-known, proven applications of Stream Processing:
 
 **Common Usage Pattern for In-Stream Analytics**
 
-![](/images/wp/2019/10/1246.png)
+![](/old-igfasouza-blog/images/wp/2019/10/1246.png)
 
 ## 4. Pattern
 
@@ -346,24 +346,24 @@ Although batch can be handled as a special case of stream processing, analyzing 
 
 Consider the example of a traffic sensor that counts every 15 seconds the number of vehicles passing a certain location. The resulting stream could look like:
 
-![](/images/wp/2019/10/window-stream01-1024x74.png)
+![](/old-igfasouza-blog/images/wp/2019/10/window-stream01-1024x74.png)
 
 If you would like to know, how many vehicles passed that location, you would simply sum the individual counts. However, the nature of a sensor stream is that it continuously produces data. Such a stream never ends and it is not possible to compute a final sum that can be returned. Instead, it is possible to compute rolling sums, i.e., return for each input event an updated sum record. This would yield a new stream of partial sums.
 
-![](/images/wp/2019/10/window-stream02-1024x151.png)
+![](/old-igfasouza-blog/images/wp/2019/10/window-stream02-1024x151.png)
 
 However, a stream of partial sums might not be what we are looking for, because it constantly updates the count and even more important, some information such as variation over time is lost. Hence, we might want to rephrase our question and ask for the number of cars that pass the location every minute. This requires us to group the elements of the stream into finite sets, each set corresponding to sixty seconds. This operation is called a tumbling windows operation.
 
-![](/images/wp/2019/10/window-stream03-1024x224.png)
+![](/old-igfasouza-blog/images/wp/2019/10/window-stream03-1024x224.png)
 
 Tumbling windows discretize a stream into non-overlapping windows. For certain applications it is important that windows are not disjunct because an application might require smoothed aggregates. For example, we can compute every thirty seconds the number of cars passed in the last minute. Such windows are called sliding windows.
 
-![](/images/wp/2019/10/window-stream04-1024x279.png)
+![](/old-igfasouza-blog/images/wp/2019/10/window-stream04-1024x279.png)
 
 This is because each element of a stream must be processed by the same window operator that decides which windows the element should be added to. For many applications, a data stream needs to be grouped into multiple logical streams on each of which a window operator can be applied. Think for example about a stream of vehicle counts from multiple traffic sensors (instead of only one sensor as in our previous example), where each sensor monitors a different location. By grouping the stream by sensor id, we can compute windowed traffic statistics for each location in parallel.  
 The following figure shows tumbling windows that collect two elements over a stream of (sensorId, count) pair elements.
 
-![](/images/wp/2019/10/window-stream05-1024x341.png)
+![](/old-igfasouza-blog/images/wp/2019/10/window-stream05-1024x341.png)
 
 Generally speaking, a window defines a finite set of elements on an unbounded stream. This set can be based on time (as in our previous examples), element counts, a combination of counts and time, or some custom logic to assign elements to windows.
 
@@ -389,7 +389,7 @@ The reality is that the value of most data degrades with time. It’s interestin
 
 The most popular Stream processing framework is Kafka. You can check my previous post here
 
-> [What is Kafka?](/what-is-kafka/)
+> [What is Kafka?](/old-igfasouza-blog/what-is-kafka/)
 
 ## 11. Book
 

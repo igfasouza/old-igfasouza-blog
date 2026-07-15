@@ -11,7 +11,7 @@ description: Hey, you! Coroutines is something old that was forgotten for many y
 image: wp/2022/02/coroutines01.png
 ---
 
-![](/images/wp/2022/02/coroutines01.png)
+![](/old-igfasouza-blog/images/wp/2022/02/coroutines01.png)
 
 **Hey, you!**
 
@@ -29,22 +29,22 @@ The main feature here is that a virtual thread doesn’t block its current carri
 
 **Let’s see how coroutines work in an example.**
 
-![](/images/wp/2022/02/coroutines011.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/coroutines011.png)  
 Picture 1: create several coroutines
 
 You can create several coroutines, lightweight threads, and use the thread context to run them.
 
-![](/images/wp/2022/02/coroutines02.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/coroutines02.png)  
 Picture 2: coroutines use a Thread context
 
 The coroutines run as normal
 
-![](/images/wp/2022/02/coroutines03.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/coroutines03.png)  
 Picture 3: get suspended, usually to wait for asynchronous events
 
 Once the coroutines get suspended or get blocked with an IO task, the coroutines is removed from the thread and another task can take its place to be processed. This makes it faster and makes better use of the CPU.
 
-![](/images/wp/2022/02/coroutines04.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/coroutines04.png)  
 Picture 4: be resumed to continue their jobs
 
 Once the suspended task is finished it could back a thread to continue the process. It could be any available thread. The picture shows task Blue which was originally processed in thread 1 comeback in thread 2.
@@ -55,7 +55,7 @@ In the last few years, coroutines have grown in popularity and are now included 
 
 Java has been threaded since the beginning, around 25 years, and is only now getting virtual threads.
 
-![](/images/wp/2022/02/loom01.jpeg)  
+![](/old-igfasouza-blog/images/wp/2022/02/loom01.jpeg)  
 Picture 5: https://cr.openjdk.java.net/~rpressler/loom/Loom-Proposal.html
 
 Currently, there is no coroutines implementation in Java and Project Loom is a proposal implementation. Is not yet clear when this should be added to Java, but there is a big expectation for Java 19.
@@ -73,19 +73,19 @@ A continuation (or co-routine) is a sequence of instructions that can yield and 
 
 It’s important to realize that this suspend/resume now occurs in the language runtime instead of the OS. Therefore, it prevents the expensive context switch between kernel threads.
 
-![](/images/wp/2022/02/fibers.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/fibers.png)  
 Picture 6: Coroutines with Fibers
 
 You can create several Fibers that will be translated in only fill threads and this will be transparent for the user. In this way, you can have better use of the CPU.
 
 Is a tradeoff to think about, the thread per task model is easy to implement but not scalable. Reactive programming is more scalable but the implementation is a bit more involved. A simple graph representing program complexity vs. program scalability would look like this:
 
-![](/images/wp/2022/02/scalability1.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/scalability1.png)  
 Picture 7: Scalability VS complexity tradeoff
 
 ## Fun time
 
-![](/images/wp/2022/02/result.gif)  
+![](/old-igfasouza-blog/images/wp/2022/02/result.gif)  
 Picture 8: Virtual Threads or Coroutines in an animated gif
 
 ## Conclusion

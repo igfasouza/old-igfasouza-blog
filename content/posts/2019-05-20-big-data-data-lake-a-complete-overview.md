@@ -14,7 +14,7 @@ description: What’s the crack jack? If you ever wanted to know what is Big Dat
 image: wp/2019/05/bigdata_datalake.jpg
 ---
 
-![](/images/wp/2019/05/bigdata_datalake.jpg)
+![](/old-igfasouza-blog/images/wp/2019/05/bigdata_datalake.jpg)
 
 **What’s the crack jack?**
 
@@ -24,15 +24,15 @@ I just finished a series of blog post where I did an overview in Big Data, Data 
 
 The idea here is a complete post with a good overview and a good start point to discover these areas and technologies.
 
-[What is Big Data?](/what-is-big-data/)
+[What is Big Data?](/old-igfasouza-blog/what-is-big-data/)
 
-[What is Data Lake?](/what-is-data-lake/)
+[What is Data Lake?](/old-igfasouza-blog/what-is-data-lake/)
 
-[What is Hadoop?](/what-is-hadoop/)
+[What is Hadoop?](/old-igfasouza-blog/what-is-hadoop/)
 
-[What is Apache Spark?](/what-is-apache-spark/)
+[What is Apache Spark?](/old-igfasouza-blog/what-is-apache-spark/)
 
-[What is Apache Kafka?](/what-is-kafka/)
+[What is Apache Kafka?](/old-igfasouza-blog/what-is-kafka/)
 
 All post are based on a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 

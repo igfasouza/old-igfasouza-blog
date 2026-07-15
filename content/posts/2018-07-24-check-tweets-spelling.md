@@ -12,7 +12,7 @@ description: 'Alright Boyo? Donald Trump has been forced to correct his tweet bo
 image: wp/2018/07/Untitled-drawing-1.jpg
 ---
 
-![](/images/wp/2018/07/trumptweets-1024x683.jpg)
+![](/old-igfasouza-blog/images/wp/2018/07/trumptweets-1024x683.jpg)
 
 **Alright Boyo?**
 
@@ -25,7 +25,7 @@ The tweet itself had a few errors: Instead of “pore over” Mr Trump wrote “
 
 There are also question marks over how many books the former businessman has actually written.
 
-![](/images/wp/2018/07/Untitled-drawing-1-300x270.jpg)
+![](/old-igfasouza-blog/images/wp/2018/07/Untitled-drawing-1-300x270.jpg)
 
 The tweet received a number of mocking responses before it was deleted and reposted with the “pour over” error corrected.
 
@@ -98,7 +98,7 @@ The website politwoops.eu follows some politicians on Twitter and they show a li
 [1] 0.958324
 ```
 
-![](/images/wp/2018/07/Untitled-drawing-300x200.jpg)
+![](/old-igfasouza-blog/images/wp/2018/07/Untitled-drawing-300x200.jpg)
 
 This proves that he actually deleted the tweet and posted it again and that he makes some mistakes.
 
@@ -127,6 +127,6 @@ ID   WORD   RESULT
 936178221153910784   Hadoop   FALSE
 ```
 
-![](/images/wp/2018/07/Untitled-drawing-2-300x185.jpg)
+![](/old-igfasouza-blog/images/wp/2018/07/Untitled-drawing-2-300x185.jpg)
 
 I put everything in my [Github](https://github.com/igfasouza/check_tweets_spelling), so you can get the code and play with. Just change the Twitter account and check yourself.

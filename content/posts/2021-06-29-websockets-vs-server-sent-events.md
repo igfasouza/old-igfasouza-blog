@@ -11,7 +11,7 @@ description: 'What’s up? This blog post compares two similar technologies: Web
 image: wp/2021/06/ws_sse01.jpg
 ---
 
-![](/images/wp/2021/06/ws_sse01.jpg)
+![](/old-igfasouza-blog/images/wp/2021/06/ws_sse01.jpg)
 
 **What’s up?**
 
@@ -56,7 +56,7 @@ The name Server-Sent Events is mostly self-explanatory: it’s a technology stan
 
 The major difference between WS and SSE is that WS is bidirectional (allowing communication between the client and the server) while SSEs are mono-directional (only allowing the client to receive data from the server).
 
-![](/images/wp/2021/06/sse_ws1.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/06/sse_ws1.jpg)  
 Picture 1: The difference between WS and SSE
 
 Another notable difference is the browser compatibility of the two technologies. In this regard, WS has received more attention (and appreciation) than SSEs. More browsers support WS natively than SSEs.
@@ -65,7 +65,7 @@ SSEs come with a set of features that WS lack by design, such as automatic recon
 
 Although WS uses an initial HTTP connection, this connection is updated after a TCP handshake after which data is sent through the WS protocol. This is a more complex protocol than the SSE protocol. Because they’re bidirectional, WS requires more development effort than SSEs, which only need to send an HTTP message with a specific header, whereas a WS needs to establish and maintain a TCP socket communication, as well as a listener socket on the server-side.
 
-![](/images/wp/2021/06/Screenshot-2021-06-29-at-11.48.31.png)  
+![](/old-igfasouza-blog/images/wp/2021/06/Screenshot-2021-06-29-at-11.48.31.png)  
 Table 1: The difference between WS and SSE
 
 ## 5. Similarities

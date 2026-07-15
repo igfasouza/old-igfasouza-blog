@@ -13,19 +13,19 @@ description: How’s the craic? 2021/03/03 This is another blog about Raspberry 
 image: wp/2021/03/dublin-bus-out-of-service.jpg
 ---
 
-![](/images/wp/2021/03/dublin-bus-out-of-service.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/dublin-bus-out-of-service.jpg)
 
 **How’s the craic?**  
 2021/03/03
 
-This is another blog about Raspberry PI, and today I want to show how I did a simple Kafka cluster demo using the Inky pHAT. It’s kind of a continuation from my previous blog, [Kafka at the edge with Raspberry PI](/kafka-at-the-edge-with-raspberry-pi/).
+This is another blog about Raspberry PI, and today I want to show how I did a simple Kafka cluster demo using the Inky pHAT. It’s kind of a continuation from my previous blog, [Kafka at the edge with Raspberry PI](/old-igfasouza-blog/kafka-at-the-edge-with-raspberry-pi/).
 
-If you’re not familiar with Kafka, I suggest you have a look at my previous post [What is Kafka?](/what-is-kafka/) before, and you can have a look at how I created the Kafka cluster [here](/raspberry-pi-kafka-cluster/).
+If you’re not familiar with Kafka, I suggest you have a look at my previous post [What is Kafka?](/old-igfasouza-blog/what-is-kafka/) before, and you can have a look at how I created the Kafka cluster [here](/old-igfasouza-blog/raspberry-pi-kafka-cluster/).
 
 The Inky pHAT is an add-on board for Raspberry Pi, that has a low-energy, high-falutin, electronic paper (ePaper / eInk / EPD) display for your Pi, in three different color schemes: red/black/white, yellow/black/white, and black/white.  
 You can learn more about Inky pHAT [here](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811) and check the API [here](https://github.com/pimoroni/inky).
 
-![](/images/wp/2021/03/eink.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/eink.jpg)
 
 Real-Time Locating System (RTLS) enables identifying and tracking the location of objects or people in real-time. It is used everywhere in transportation and logistics across industries.
 
@@ -52,7 +52,7 @@ For the consumer part, you can use my Quarkus example. You can get the full Quar
 
 **Results**
 
-![](/images/wp/2021/03/eink3-300x211.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/eink3-300x211.jpg)
 
 > Raspberry PI + fun  
 > real time bus with apache kafka[@Raspberry\_Pi](https://twitter.com/Raspberry_Pi?ref_src=twsrc%5Etfw) [@apachekafka](https://twitter.com/apachekafka?ref_src=twsrc%5Etfw) [@pimoroni](https://twitter.com/pimoroni?ref_src=twsrc%5Etfw)[#pimoroni](https://twitter.com/hashtag/pimoroni?src=hash&ref_src=twsrc%5Etfw) [#apachekafka](https://twitter.com/hashtag/apachekafka?src=hash&ref_src=twsrc%5Etfw) [#raspberrypi](https://twitter.com/hashtag/raspberrypi?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/oE8eNjBJW1](https://t.co/oE8eNjBJW1)
@@ -61,13 +61,13 @@ For the consumer part, you can use my Quarkus example. You can get the full Quar
 
 Kafka can be deployed as a single broker in a vehicle and a global Kafka infrastructure can spread to multiple cloud providers, regions, countries, or even continents and integrate with tens or hundreds of factories or other edge locations.
 
-![](/images/wp/2021/03/kafka_at_the_edge1.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/kafka_at_the_edge1.jpg)
 
 **Curiosity**
 
 1- Dublin bus is already using an e-ink display to show bus stop data.
 
-![](/images/wp/2021/03/eink1-223x300.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/eink1-223x300.jpg)
 
 2- I did a demo for real-time data from connected vehicles some time ago.
 

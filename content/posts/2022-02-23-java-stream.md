@@ -11,7 +11,7 @@ description: How’s the form? Introduced in Java 8, the Stream API provides a f
 image: wp/2022/02/java_streams01.png
 ---
 
-![](/images/wp/2022/02/java_streams01-1024x300.png)
+![](/old-igfasouza-blog/images/wp/2022/02/java_streams01-1024x300.png)
 
 **How’s the form?**
 
@@ -19,9 +19,9 @@ Introduced in Java 8, the Stream API provides a functional approach to processin
 
 I got myself thinking about a way to explain Java Stream in an easy way and I decided to do some research. This post is a collection of links, videos, tutorials, blogs, and books that I found mixed with my opinion.
 
-We can see Java Streams as a series of connected pipes, wherein each pipe our data gets processed differently; yes, It could use my [Led Strip](/learn-kafka-and-event-streams-with-fun/) idea as well.
+We can see Java Streams as a series of connected pipes, wherein each pipe our data gets processed differently; yes, It could use my [Led Strip](/old-igfasouza-blog/learn-kafka-and-event-streams-with-fun/) idea as well.
 
-![](/images/wp/2022/02/data_streams.jpg)  
+![](/old-igfasouza-blog/images/wp/2022/02/data_streams.jpg)  
 Picture 1: Data Stream
 
 Simply put, streams are wrappers around a data source, allowing us to operate with that data source and making bulk processing convenient and fast.  
@@ -77,7 +77,7 @@ Streams can be created from various data sources, especially collections. Lists 
 
 Java Streams operations are stored internally using a LinkedList structure and in its internal storage structure, each stage gets assigned a bitmap that follows this structure:
 
-![](/images/wp/2022/02/streams_internal.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/streams_internal.png)  
 Picture 2: Java Stream internal store structure
 
 Some of the advantages that streams have are less verbose code, more intuitive code, and less error prone code.
@@ -91,7 +91,7 @@ There are two main scenarios in the execution of a Java Stream: when all stages 
 - **Stateful operations**  
   On the contrary, stateful operations need to know about all the elements before emitting a result. Examples of stateful operations are sorted, limit, or distinct.
 
-![](/images/wp/2022/02/java_streams_api.jpg)  
+![](/old-igfasouza-blog/images/wp/2022/02/java_streams_api.jpg)  
 Picture 3: Java Util Stream
 
 ## Books

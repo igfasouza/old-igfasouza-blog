@@ -13,7 +13,7 @@ description: Hey you! This post is to show how I created a Quarkus Qute demo wit
 image: wp/2020/09/raspberry_quarkus.jpg
 ---
 
-![](/images/wp/2020/09/raspberry_quarkus.jpg)
+![](/old-igfasouza-blog/images/wp/2020/09/raspberry_quarkus.jpg)
 
 **Hey you!**
 
@@ -32,11 +32,11 @@ If you’ve worked with other templating engines before, like me, this will look
 A simple Quarkus Qute example that shows a 7 segments display and control in real-time a real one with a Raspberry Pi 3 B.  
 When I was googling about a 7 segment display this [site](https://propjockey.github.io/bcd7sdd/) appeared in my result and I came up with the idea.
 
-I suggest you check out my [7 segment display](/7-segment-display/) blog before looking at the code.
+I suggest you check out my [7 segment display](/old-igfasouza-blog/7-segment-display/) blog before looking at the code.
 
-![](/images/wp/2020/09/7-seg-disp-ca.png)
+![](/old-igfasouza-blog/images/wp/2020/09/7-seg-disp-ca.png)
 
-![](/images/wp/2020/09/Screenshot-2020-09-22-at-13.50.54-187x300.png)
+![](/old-igfasouza-blog/images/wp/2020/09/Screenshot-2020-09-22-at-13.50.54-187x300.png)
 
 ## Code
 

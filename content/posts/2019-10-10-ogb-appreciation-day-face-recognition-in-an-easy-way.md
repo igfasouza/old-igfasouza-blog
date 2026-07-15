@@ -11,7 +11,7 @@ description: 'How’s it going horse? It’s Oracle Groundbreaker’s Appreciati
 image: wp/2019/10/1-fpDngO6lM5pDeIPOOezK1g.jpeg
 ---
 
-![](/images/wp/2019/10/1-fpDngO6lM5pDeIPOOezK1g-1024x682.jpeg)
+![](/old-igfasouza-blog/images/wp/2019/10/1-fpDngO6lM5pDeIPOOezK1g-1024x682.jpeg)
 
 **How’s it going horse?**
 
@@ -46,7 +46,7 @@ sudo pip3 install face_recognition
 
 Now you are ready to play with Face Recognition.
 
-![](/images/wp/2019/10/face_recognition01.jpg)
+![](/old-igfasouza-blog/images/wp/2019/10/face_recognition01.jpg)
 
 You can use my Python code to Streaming your Raspberry Pi camera feeds.
 
@@ -144,7 +144,7 @@ video_capture = cv2.VideoCapture(0)
 ```
 
 Happy face recognition.  
-![](/images/wp/2019/10/giphy.gif)
+![](/old-igfasouza-blog/images/wp/2019/10/giphy.gif)
 
 ## Link
 

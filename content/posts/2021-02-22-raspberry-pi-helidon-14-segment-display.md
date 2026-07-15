@@ -13,25 +13,25 @@ description: How goes the battle? 2021/02/22 This post is to show how I created 
 image: wp/2021/02/helidon_raspberry.jpg
 ---
 
-![](/images/wp/2021/02/helidon_raspberry.jpg)
+![](/old-igfasouza-blog/images/wp/2021/02/helidon_raspberry.jpg)
 
 **How goes the battle?**  
 2021/02/22
 
 This post is to show how I created a Helidon demo with a Raspberry PI. A simple web application to control a 14 segments display. This is another blog about Java on Raspberry PI.
 
-![](/images/wp/2021/02/PXL_20210219_205957688-1024x768.jpg)
+![](/old-igfasouza-blog/images/wp/2021/02/PXL_20210219_205957688-1024x768.jpg)
 
 Originally named J4C (Java for Cloud), Helidon was designed to be simple and fast, and the framework supports two programming models for writing microservices: Helidon SE and Helidon MP. Helidon SE is designed to be a microframework that supports the reactive programming model, it features three core APIs to create a microservice; a web server, configuration, and security. Helidon MP, on the other hand, is an Eclipse MicroProfile runtime that allows the Jakarta EE community to run microservices in a portable way; supports the MicroProfile 1.1 specification for building microservices-based applications.  
 But in both cases, a Helidon microservice is a Java SE application that starts a tinny HTTP server from the main method.
 
-![](/images/wp/2021/02/helidon-se_mp.png)  
+![](/old-igfasouza-blog/images/wp/2021/02/helidon-se_mp.png)  
 Helidon architecture
 
-![](/images/wp/2021/02/helidon-graph.png)  
+![](/old-igfasouza-blog/images/wp/2021/02/helidon-graph.png)  
 Microservices frameworks categories
 
-![](/images/wp/2021/02/helidonn20.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/02/helidonn20.jpg)  
 Helidon 2.0 adds significant improvements for both Helidon SE and Helidon MP programming styles
 
 **Fun Facts**  
@@ -43,9 +43,9 @@ A simple Helidon example that shows a 14 segments display and control in real-ti
 
 I have the “**5421AG**” model. 14 segments display – [5421AG](https://pdf1.alldatasheet.com/datasheet-pdf/view/683745/FORYARD/FYD-5421AX-32.html)
 
-![](/images/wp/2021/02/14segment.jpg)
+![](/old-igfasouza-blog/images/wp/2021/02/14segment.jpg)
 
-![](/images/wp/2021/02/14segment_pins.jpg)
+![](/old-igfasouza-blog/images/wp/2021/02/14segment_pins.jpg)
 
 The PI4J uses a different GPIO number.
 
@@ -53,9 +53,9 @@ The PI4J uses a different GPIO number.
 
 <http://wiringpi.com/pins/>
 
-![](/images/wp/2020/09/Pi4J_GPIO.png)
+![](/old-igfasouza-blog/images/wp/2020/09/Pi4J_GPIO.png)
 
-![](/images/wp/2021/02/Screenshot-2021-02-22-at-17.27.02-388x1024.png)
+![](/old-igfasouza-blog/images/wp/2021/02/Screenshot-2021-02-22-at-17.27.02-388x1024.png)
 
 PIN 11 -> GPIO 11  
 PIN16 -> GPIO 25
@@ -84,11 +84,11 @@ ServerEndpointConfig.Builder.create(MessageBoardEndpoint.class, "/board")
 }
 ```
 
-Disclaimer – I use the same CSS that I used in my [Quarkus Qute example](/quarkus-qute-with-raspberry-pi/) and I started this demo using this [WebSocket sample](https://github.com/oracle/helidon/tree/master/examples/webserver/websocket)
+Disclaimer – I use the same CSS that I used in my [Quarkus Qute example](/old-igfasouza-blog/quarkus-qute-with-raspberry-pi/) and I started this demo using this [WebSocket sample](https://github.com/oracle/helidon/tree/master/examples/webserver/websocket)
 
 You can get the full code on my [GitHub](https://github.com/igfasouza/helidon-14segments-display).
 
-![](/images/wp/2021/02/Screenshot-2021-02-22-at-13.48.17-204x300.png)
+![](/old-igfasouza-blog/images/wp/2021/02/Screenshot-2021-02-22-at-13.48.17-204x300.png)
 
 Links
 

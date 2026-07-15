@@ -7,8 +7,8 @@ bodyClass: home-page
 
 <main class="home">
   <section class="home-hero">
-    <a href="/images/igor.jpg" target="_blank" rel="noopener noreferrer" class="home-avatar-link">
-      <img src="/images/igor.jpg" alt="Igor Souza" class="home-avatar" />
+    <a href="{site.image('igor.jpg')}" target="_blank" rel="noopener noreferrer" class="home-avatar-link">
+      <img src="{site.image('igor.jpg')}" alt="Igor Souza" class="home-avatar" />
     </a>
 
     <h1 class="home-name">Igor Souza</h1>
@@ -28,7 +28,7 @@ bodyClass: home-page
     </p>
 
     <nav class="home-nav">
-      <a href="/posts/" class="home-cta">Read the blog →</a>
+      <a href="{site.url('/posts/')}" class="home-cta">Read the blog →</a>
     </nav>
 
     <ul class="home-socials">

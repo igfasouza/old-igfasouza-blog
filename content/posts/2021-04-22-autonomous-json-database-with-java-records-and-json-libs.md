@@ -13,13 +13,13 @@ description: How heya? Since I saw the launching of the Autonomous JSON Database
 image: wp/2021/04/duke_json01.jpg
 ---
 
-![](/images/wp/2021/04/ajd.jpg)
+![](/old-igfasouza-blog/images/wp/2021/04/ajd.jpg)
 
 **How heya?**
 
 Since I saw the [launching of the Autonomous JSON Database](https://blogs.oracle.com/jsondb/autonomous-json-database) (AJD) I was wondering if it is possible to use Java Records and how it would be the Serializing and Deserializing JSON part.
 
-![](/images/wp/2021/04/create_ajdgif.gif)  
+![](/old-igfasouza-blog/images/wp/2021/04/create_ajdgif.gif)  
 Picture1: Simplified animation showing basic steps to create an AJD instance
 
 Recently Oracle [announced the Free AJD](https://blogs.oracle.com/developers/oracle-cloud-adds-free-apex-and-json-services) and I decided to put my test in a blog. You can check the AJD details [here](https://www.oracle.com/autonomous-database/autonomous-json-database/).
@@ -38,7 +38,7 @@ JDK 14 introduces records, which are a new kind of type declaration. Like an enu
 Yes, it is possible to use Records, but the most important thing here is how to Serialize and Deserialize an Object to JSON?  
 And for that, we need to check what are the JSON libs options?
 
-![](/images/wp/2021/04/json.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/04/json.jpg)  
 Picture2: most popular JSON libs
 
 In actuality, plenty of libraries already exist that can format objects into JSON. So I decided to create a test and compare the most popular JSON libs; JSON-B, Jackson, and Gson.
@@ -49,7 +49,7 @@ In actuality, plenty of libraries already exist that can format objects into JSO
 
 [Gson](https://github.com/google/gson) is a Java library that can be used to convert Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object. Gson can work with arbitrary Java objects including pre-existing objects that you do not have a source code of.
 
-![](/images/wp/2021/04/micropofile-1024x380.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/04/micropofile-1024x380.jpg)  
 Picture3: Jakarta EE VS Microprofile
 
 I did search for the Microprofile JSON specification and I didn’t find anything specific, and it looks like they follow the JSOB-B idea. (If you know something here, please leave a comment)
@@ -127,7 +127,7 @@ OracleDocument doc = db.createDocumentFromString(jsonb.toString());
 
 I also added a test where I compare the objects and the JSON to validate that they are equal.
 
-![](/images/wp/2021/04/duke_json01.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/04/duke_json01.jpg)  
 Picture4: Java Duke serialization and deserialization
 
 I saw that [Quarkus](https://quarkus.io/blog/quarkus-1-13-2-final-released/) released the Oracle JDBC driver extension recently, and people started to ask what is special about this extension and if this extension supports SODA or not?

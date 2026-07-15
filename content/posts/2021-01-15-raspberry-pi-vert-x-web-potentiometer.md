@@ -13,22 +13,22 @@ description: How’s the form? After I wrote my motivation resolutions post I ca
 image: wp/2021/01/vertx.jpg
 ---
 
-![](/images/wp/2021/01/vertx.jpg)
+![](/old-igfasouza-blog/images/wp/2021/01/vertx.jpg)
 
 **How’s the form?**
 
-After I wrote my [motivation resolutions post](/resolutions-ideas-2021/) I came with the idea that it is possible to do a lot of Raspberry Pi projects without a wait or by any new component.  
+After I wrote my [motivation resolutions post](/old-igfasouza-blog/resolutions-ideas-2021/) I came with the idea that it is possible to do a lot of Raspberry Pi projects without a wait or by any new component.  
 *“Invest your time before you invest your money and build something before you buy the component.”*  
 Just create a virtual one.
 
-For example, If you don’t have a 7 segment display you can follow [this](/quarkus-qute-with-raspberry-pi/);  
-If you don’t have an 8×8 Led Matrix you can follow [this](/micronaut-velocity-with-raspberry-pi/) and so on.
+For example, If you don’t have a 7 segment display you can follow [this](/old-igfasouza-blog/quarkus-qute-with-raspberry-pi/);  
+If you don’t have an 8×8 Led Matrix you can follow [this](/old-igfasouza-blog/micronaut-velocity-with-raspberry-pi/) and so on.
 
 You can go ahead and use this idea to start your project without waiting more time and without buying anything.
 
 Today I want to show a way to play with a potentiometer.
 
-![](/images/wp/2021/01/Electronic-Component-Potentiometer-297x300.jpg)
+![](/old-igfasouza-blog/images/wp/2021/01/Electronic-Component-Potentiometer-297x300.jpg)
 
 **From Wikipedia**  
 A potentiometer is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. If only two terminals are used, one end and the wiper, it acts as a variable resistor or rheostat.
@@ -45,7 +45,7 @@ An instrument for measuring an electromotive force by balancing it against the p
 
 A simple web application that I can use as a potentiometer.
 
-![](/images/wp/2021/01/20210115_121231-1024x1024.jpg)
+![](/old-igfasouza-blog/images/wp/2021/01/20210115_121231-1024x1024.jpg)
 
 This time I decided to do it with [Vert.X](https://github.com/eclipse-vertx/vert.x).
 
@@ -58,12 +58,12 @@ If I use setPwm(), my LED can be any value between 0 and 100, and using an input
 
 But I can add some CSS style and create a knob and simulate a real potentiometer. Now I can call my REST interface for each value and simulate a real use of a potentiometer.
 
-I can combine this with my [Duke robot](/raspberry-pi-servo-java-duke-robot/) and control the Duke’s arm.  
-I can combine it with my [Christmas hats](/raspberry-christmas-hat/) and create a nice fade effect.
+I can combine this with my [Duke robot](/old-igfasouza-blog/raspberry-pi-servo-java-duke-robot/) and control the Duke’s arm.  
+I can combine it with my [Christmas hats](/old-igfasouza-blog/raspberry-christmas-hat/) and create a nice fade effect.
 
 I can do a simple Led example.
 
-![](/images/wp/2021/01/01_Blinking-LED_bb-1024x777.jpg)
+![](/old-igfasouza-blog/images/wp/2021/01/01_Blinking-LED_bb-1024x777.jpg)
 
 ## Code
 

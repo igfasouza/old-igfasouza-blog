@@ -12,7 +12,7 @@ description: How the hell are you? Spring framework has evolved to become the mo
 image: wp/2021/06/kafkaSpring3.jpg
 ---
 
-![](/images/wp/2021/06/kafkaSpring3.jpg)
+![](/old-igfasouza-blog/images/wp/2021/06/kafkaSpring3.jpg)
 
 **How the hell are you?**
 
@@ -38,12 +38,12 @@ Handling streams of data, especially “live” data whose volume is not predete
 
 ## 1. Spring WebFlux
 
-![](/images/wp/2021/06/spring_webflux.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/06/spring_webflux.jpg)  
 Picture 1: Spring WebFlux logo
 
 Spring WebFlux provides reactive, async, non-blocking programming support for web applications in an annotated Controller format similar to SpringMVC. It moves away from the thread-per-request blocking model in traditional SpringMVC and moves towards a multi-EventLoop, async, non-blocking paradigm with back-pressure that is more scalable and efficient than traditional blocking code.
 
-![](/images/wp/2021/06/spring-mvc-webflux.png)  
+![](/old-igfasouza-blog/images/wp/2021/06/spring-mvc-webflux.png)  
 Picture 2: The differences between Spring MVC and Spring WebFlux
 
 Spring WebFlux is built on [Project Reactor](https://projectreactor.io/) which implements the [Reactive Streams specification](https://www.reactive-streams.org/).
@@ -52,7 +52,7 @@ Spring WebFlux is built on [Project Reactor](https://projectreactor.io/) which i
 
 Spring WebFlux will allow you to more efficiently leverage CPU and network resources, provide a more scalable architecture and a more responsive user experience.
 
-![](/images/wp/2021/06/kafkaspring01.png)  
+![](/old-igfasouza-blog/images/wp/2021/06/kafkaspring01.png)  
 Picture 3: Spring Reactive Stack
 
 ## 2. Spring for Apache Kafka
@@ -61,7 +61,7 @@ The Spring for Apache Kafka (Spring-Kafka) project applies core Spring concepts 
 
 ## 3. Spring Cloud Stream
 
-![](/images/wp/2021/06/Spring_cloud_stream.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/06/Spring_cloud_stream.jpg)  
 Picture 4: Spring Cloud Stream logo
 
 Spring describes Spring Cloud Stream as “a framework for building highly scalable event-driven microservices connected with shared messaging systems”, is a Spring subproject that allows the developer to build event-driven architecture with messaging systems like Kafka or RabbitMQ. This is an abstraction layer on top of messaging platforms like Kafka and RabbitMQ. Hence, it hides the implementation-specific details of the platform.
@@ -70,7 +70,7 @@ Spring Cloud Stream uses a concept of Binders that handles the abstraction to th
 
 Spring Cloud Stream uses Spring Boot for configuration, and the Binder abstraction makes it possible for a Spring Cloud Stream application to be flexible in how it connects to middleware. For example, deployers can dynamically choose, at runtime, the destinations (e.g., the Kafka topics or RabbitMQ exchanges) to which channels connect. Such configuration can be provided through external configuration properties and in any form supported by Spring Boot (including application arguments, environment variables, and application.yml or application.properties files).
 
-![](/images/wp/2021/06/kafka_spring05.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/06/kafka_spring05.jpg)  
 Picture 5: Brokers and Binders
 
 At the time of publication, there were binders for Apache Kafka, Kafka Streams, Rabbit MQ, Azure Event Hubs, Google Cloud PubSub, and many others. You can see the list [here](https://cloud.spring.io/spring-cloud-static/spring-cloud-stream/current/reference/html/spring-cloud-stream.html#_binder_implementations).
@@ -87,7 +87,7 @@ Binders can be used on both the input and output sides to interact with producer
 
 Each binder implementation contains configuration options for setting up features specific to it, such as concurrency, partitioning, and error handling.
 
-![](/images/wp/2021/06/spring_binders.png)  
+![](/old-igfasouza-blog/images/wp/2021/06/spring_binders.png)  
 Picture 6: Producers and Consumers – from Binders documentation
 
 <https://docs.spring.io/spring-cloud-stream/docs/Brooklyn.RELEASE/reference/html/_binders.html>
@@ -106,7 +106,7 @@ Spring Cloud Stream introduces three main components that allow developers to ut
 - **Binding** – The interface for sending and receiving messages. This component links the abstract channels in your code with a topic or queue that’s handled by the binder.
 - **Message** – The data structure used to communicate with the bindings between your code and your message broker. How this data is packaged and communicated over the message broker is determined by the binder.
 
-![](/images/wp/2021/06/kafkaspring03.png)  
+![](/old-igfasouza-blog/images/wp/2021/06/kafkaspring03.png)  
 Picture 7: Application overview
 
 Spring Cloud Stream allows us to create broker-agnostic event-driven microservices in a surprisingly simple manner. Since all brokers are treated the same, configuring your Stream to communicate with it is just a matter of adding a dependency and a little extra configuration, and very little knowledge if any regarding the specific broker that we decide to use.  

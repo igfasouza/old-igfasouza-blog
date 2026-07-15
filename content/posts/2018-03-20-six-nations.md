@@ -12,7 +12,7 @@ description: How heya? Introduction A long time I came collecting Twitter data w
 image: wp/2018/03/sixnation.jpg
 ---
 
-![](/images/wp/2018/03/sixnation.jpg)
+![](/old-igfasouza-blog/images/wp/2018/03/sixnation.jpg)
 
 **How heya?**
 
@@ -137,7 +137,7 @@ The result was:
 **Code**
 
 [Here](http://nbviewer.jupyter.org/gist/karishmadudani/9c5500e124b8e515650c348b42b1d9dc) you can find a Jupyter notebook with almost everything that you need to do something similar.  
-You can have a look at [my post](/jupyter-notebook/) to start your jupyter environment
+You can have a look at [my post](/old-igfasouza-blog/jupyter-notebook/) to start your jupyter environment
 
 **Under the Hood**
 

@@ -11,7 +11,7 @@ description: Happy New Year, horses. First post of the year and nothing better t
 image: wp/2021/01/doit.jpg
 ---
 
-![](/images/wp/2021/01/doit-1024x576.jpg)
+![](/old-igfasouza-blog/images/wp/2021/01/doit-1024x576.jpg)
 
 **Happy New Year, horses.**
 
@@ -27,7 +27,7 @@ Very often, we as developers want to learn more, and it is easy to come up with 
 Just woke up with another fantastic idea, rush to your favorite domain registrar and buy it, sometimes celebrate. Then you do nothing, your domain name sits sadly in your account gathering dust, only for you to renew it year-on-year and your idea flutters away like a feather in the wind.  
 Sound familiar?
 
-![](/images/wp/2021/01/resolutions-1024x916.png)
+![](/old-igfasouza-blog/images/wp/2021/01/resolutions-1024x916.png)
 
 ## Start point
 

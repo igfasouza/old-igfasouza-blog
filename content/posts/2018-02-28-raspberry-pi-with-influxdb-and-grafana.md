@@ -11,7 +11,7 @@ description: 'Alright, boss? Grafana is an open source metric analytics & visual
 image: wp/2018/02/influxdb_grafana.jpg
 ---
 
-![](/images/wp/2018/02/influxdb_grafana.jpg)
+![](/old-igfasouza-blog/images/wp/2018/02/influxdb_grafana.jpg)
 
 **Alright, boss?**
 
@@ -67,8 +67,8 @@ sudo service grafana-server start
 With everything installed you are ready to start doing some awesome things.
 
 I going to show two examples here:  
-One using [sense-hat](/sense-hat/) to get the temperature, pressure and humidity value  
-and other using [HS110](/smart-plug-tp-link/) to get the energy consumption
+One using [sense-hat](/old-igfasouza-blog/sense-hat/) to get the temperature, pressure and humidity value  
+and other using [HS110](/old-igfasouza-blog/smart-plug-tp-link/) to get the energy consumption
 
 Here is a good InfluxDB getting started  
 <https://docs.influxdata.com/influxdb/v0.8/introduction/getting_started/>
@@ -215,18 +215,18 @@ http://localhost:3000
 Go to Datasource->Add New and fill in with your database details  
 User and psw should be: “root” and “root” by default
 
-![](/images/wp/2018/02/Grafana01-300x284.png)
+![](/old-igfasouza-blog/images/wp/2018/02/Grafana01-300x284.png)
 
 Create a new dashboard, choose your database and on the tab matrics configure your query.  
-![](/images/wp/2018/02/Grafana02-300x121.png)
+![](/old-igfasouza-blog/images/wp/2018/02/Grafana02-300x121.png)
 
 Edit the dashboard and go to metrics.
 
-![](/images/wp/2018/02/Grafana03-300x132.png)
+![](/old-igfasouza-blog/images/wp/2018/02/Grafana03-300x132.png)
 
 Choose the database and then configure the query.
 
-![](/images/wp/2018/02/Grafana04-300x167.png)
+![](/old-igfasouza-blog/images/wp/2018/02/Grafana04-300x167.png)
 
 > Sense hat + Grafana = on fly himidity, temperature and pressure dashboard [pic.twitter.com/bp0d8jTXXZ](https://t.co/bp0d8jTXXZ)
 >

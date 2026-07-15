@@ -11,7 +11,7 @@ description: 'How’s the craic? Reactive Programming is trending nowadays and t
 image: wp/2022/02/reactive_prog.jpg
 ---
 
-![](/images/wp/2022/02/reactive_prog.jpg)
+![](/old-igfasouza-blog/images/wp/2022/02/reactive_prog.jpg)
 
 **How’s the craic?**
 
@@ -25,7 +25,7 @@ In a few words, Reactive Programming is a programming paradigm that deals with a
 
 [The Reactive Manifesto](https://www.reactivemanifesto.org/) of 2014 introduced reactive systems and their four principles.
 
-![](/images/wp/2022/02/reactive-manifesto.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/reactive-manifesto.png)  
 Picture 1: https://dzone.com/articles/product-owner-and-reactive-microservices
 
 **From Google I found;**
@@ -38,7 +38,7 @@ Picture 1: https://dzone.com/articles/product-owner-and-reactive-microservices
 
 Most of the Reactive Programming libraries I looked at use a model centred around “observables”. An observable is a type on which you can register “observers”, as defined in the observer pattern in the GoF book.
 
-![](/images/wp/2022/02/observer_patter.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/observer_patter.png)  
 Picture 2: https://en.wikipedia.org/wiki/Observer\_pattern
 
 Objects can subscribe to a subject and get informed, whenever there is an update in the subject. Essentially, the subject maintains a list of its observers and automatically notifies them when any state is changed.
@@ -47,9 +47,9 @@ Now let’s divide Reactive programming into 3 main concepts to make it easier t
 
 **Asynchronous**; When you execute something asynchronously, you can move on to another task before it finishes. With the reactive approach, a database call does not block the calling thread and instead returns immediately. The program is structured as an asynchronous stream of events. Simply put, you instantly move to the next task after having initiated some background effort to deal with the previous task.
 
-**Streams or Data Streams**; Streams are the backbones of reactive programming, so it is necessary for you to understand what is data stream actually means. Yes, I could use my [Led Strip](/learn-kafka-and-event-streams-with-fun/) idea to understand this.
+**Streams or Data Streams**; Streams are the backbones of reactive programming, so it is necessary for you to understand what is data stream actually means. Yes, I could use my [Led Strip](/old-igfasouza-blog/learn-kafka-and-event-streams-with-fun/) idea to understand this.
 
-![](/images/wp/2022/02/data_streams.jpg)  
+![](/old-igfasouza-blog/images/wp/2022/02/data_streams.jpg)  
 Picture 3: datastreams
 
 The data stream is more of a pipeline of methods applied to the data as it passes through. In Reactive Programming, every sequence of values, data stream, is termed as observable.
@@ -59,7 +59,7 @@ The data stream is more of a pipeline of methods applied to the data as it passe
 Starting from the creation of a data stream to the end where observers receive their response, there is a wide set of ‘‘changes’’ that can be used in reactive programming.  
 Reactive Programming = Observable + change + Propagation to observers
 
-![](/images/wp/2022/02/reactive_streams01-1024x522.png)  
+![](/old-igfasouza-blog/images/wp/2022/02/reactive_streams01-1024x522.png)  
 Picture 4: Publisher-Subscriber Communication
 
 **The reactive approach involves 4 interfaces;**
@@ -88,7 +88,7 @@ Reactive Programming will bring some benefits;
 
 ## Real-life example
 
-![](/images/wp/2022/02/AliceBob.jpg)  
+![](/old-igfasouza-blog/images/wp/2022/02/AliceBob.jpg)  
 Picture 5: Real life example
 
 This is what the reactive approach is about. You wait till all async actions (changes) are completed and then proceed with further actions.

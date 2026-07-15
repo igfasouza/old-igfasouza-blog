@@ -11,11 +11,11 @@ description: Happy New Year, horses. First post of the year and nothing better t
 image: wp/2022/01/books.jpg
 ---
 
-![](/images/wp/2022/01/books.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/books.jpg)
 
 **Happy New Year, horses.**
 
-First post of the year and nothing better than another motivational post. Don’t forget to prepare your year’s [resolutions](/resolutions-ideas-2021/).
+First post of the year and nothing better than another motivational post. Don’t forget to prepare your year’s [resolutions](/old-igfasouza-blog/resolutions-ideas-2021/).
 
 What book should I read to become a better developer?  
 This is the question that constantly comes to my mind.
@@ -30,7 +30,7 @@ So here is my list. The top book that every Software Engineer should read. This 
 
 ## The Mythical Man-Month
 
-![](/images/wp/2022/01/The-Mythical-Man-Month-206x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/The-Mythical-Man-Month-206x300.jpg)
 
 This book is a classic, and recently revised and corrected. Is one of the most famous books in all of software development literature and is arguably the most famous book on software development management. The amazing thing is how relevant the book still is to software product development, first published in 1975. This book is also known for the famous expressions “There is no silver bullet” and “Creating Understandable Code is Hard but Necessary”.
 
@@ -38,26 +38,26 @@ If you are involved in software, this book is a must-read.
 
 ## Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma
 
-![](/images/wp/2022/01/Design_Patterns-238x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/Design_Patterns-238x300.jpg)
 
 The famous gang of four book.  
 So much of software engineering is the identification of problems and the creation of their solutions, and this is what the book, Design Patterns, was created to assist. In the book, the authors go over what patterns are, where they might be applicable, and how they can be used to solve design problems. It presents 23 patterns of usable and reusable design patterns aimed at problem-solving and even shows examples in programming languages like C++ and Smalltalk to help guide readers.
 
 ## Head First Design Patterns
 
-![](/images/wp/2022/01/HeadFirst-DesignPatterns-260x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/HeadFirst-DesignPatterns-260x300.jpg)
 
 Originally I had recommended Design Patterns: Elements of Reusable Object-Oriented Software. That is a great reference book for all of the design patterns we use in software today. However, since then I have read Head First Design Patterns and I loved it. This covers the most common design patterns that we use today and explains them in a very engaging way that enables you to remember them and the situations that they can be helpful to you. This is a great book for anyone trying to understand the advantage of well-constructed object-oriented software and the book is a pleasure to read. Highly recommend it.
 
 ## Refactoring
 
-![](/images/wp/2022/01/Refactoring-231x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/Refactoring-231x300.jpg)
 
 Is about improving the design of existing code. It is the process of changing a software system in such a way that it does not alter the external behavior of the code, yet improves its internal structure. With refactoring, you can even take a bad design and rework it into a good one. This book offers a thorough discussion of the principles of refactoring, including where to spot opportunities for refactoring, and how to set up the required tests. There is also a catalog of more than 40 proven refactorings with details as to when and why to use the refactoring, step-by-step instructions for implementing it, and an example illustrating how it works.
 
 ## Pragmatic Programmer
 
-![](/images/wp/2022/01/PragmaticProgrammer-229x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/PragmaticProgrammer-229x300.jpg)
 
 This was one of the first programming books I read. Though the book was written in 1999, the concepts are the basis of how we go about developing a complex system in a practical manner. Programmers are craftspeople trained to use a certain set of tools (editors, object managers, version trackers) to generate a certain kind of product (programs) that will operate in some environment (operating systems on hardware assemblies). Like any other craft, computer programming has spawned a body of wisdom, most of which isn’t taught at universities or in certification classes. Most programmers arrive at the so-called tricks of the trade over time, through independent experimentation. In The Pragmatic Programmer, Andrew Hunt and David Thomas codify many of the truths they’ve discovered during their respective careers as designers of software and writers of code.
 
@@ -65,13 +65,13 @@ Some of the authors’ nuggets of pragmatism are concrete, and the path to their
 
 ## Clean Code
 
-![](/images/wp/2022/01/CleanCode-227x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/CleanCode-227x300.jpg)
 
 Is divided into three parts. The first describes the principles, patterns, and practices of writing clean code. The second part consists of several case studies of increasing complexity. Each case study is an exercise in cleaning up code – of transforming a codebase that has some problems into one that is sound and efficient. The third part is the payoff: a single chapter containing a list of heuristics and “smells” gathered while creating the case studies. The result is a knowledge base that describes the way we think when we write, read, and clean code.
 
 ## The Clean Coder: A Code of Conduct for Professional Programmers
 
-![](/images/wp/2022/01/CleanCoder-232x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/CleanCoder-232x300.jpg)
 
 Another book by Uncle Bob teaches techniques, disciplines, tools, and practices of true software craftsmanship. “The Clean Coder: A Code of Conduct for Professional Programmers” is packed with practical advice about estimating, coding, refactoring, and testing.
 
@@ -81,7 +81,7 @@ You can see this book as similar to Pragmatic Programmer.
 
 ## Clean Architecture: A Craftsman’s Guide to Software Structure and Design
 
-![](/images/wp/2022/01/CleanArchitecture-233x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/CleanArchitecture-233x300.jpg)
 
 Clean Architecture zooms out one level to cover composition, service boundaries, and high-level application architecture. Even if you never take on the title of “Software Architect,” this book will give you a lot of insight into how you can design better software that scales.
 
@@ -89,7 +89,7 @@ Applications nowadays are very complex, and they usually consist of several comp
 
 ## Domain-driven design: Tackling Complexity in the Heart of Software
 
-![](/images/wp/2022/01/DDD-229x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/DDD-229x300.jpg)
 
 For some, DDD is the pinnacle of building maintainable and scalable software. To sum it up, DDD says that when designing software, the business rules must be at the center of your design and that the whole company must speak a common language(ubiquitous language) when talking about requirements.  
 DDD is hard. It requires a lot of technical knowledge and uses some design patterns. You also need a lot of knowledge in architecturing and designing software in general.
@@ -98,7 +98,7 @@ I don’t believe that every software should be designed the DDD way, as it migh
 
 ## Enterprise Integration Patterns
 
-![](/images/wp/2022/01/EnterpriseIntegrationPatterns-227x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/EnterpriseIntegrationPatterns-227x300.jpg)
 
 Enterprise Integration Patterns by Gregor Hohpe and Bobby Woolf is a seminal book on Messaging. Every developer working on messaging solutions should read it. Even though it’s more than 10 years old, the content is still relevant. This is because the book focuses on patterns and principles and its technology agnostic. The authors do a good job of describing how you can combine the patterns together and present the trade-offs of different approaches.
 
@@ -108,7 +108,7 @@ The idea of the book is that enterprise integration problems can be solved using
 
 ## Patterns of Enterprise Application Architecture
 
-![](/images/wp/2022/01/PatternsEnterpriseApplicationArchitecture-241x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/PatternsEnterpriseApplicationArchitecture-241x300.jpg)
 
 It deals with the practice of enterprise application development. After a short tutorial on how to develop enterprise applications, Martin then gives you over 40 patterns as solutions to common problems while architecting enterprise applications. It also comes with a lot of UML visualizations and code examples written in Java or C#.
 
@@ -117,7 +117,7 @@ However, the book is aging pretty badly, so modern concepts like REST, cloud, or
 
 ## Designing Data-Intensive Applications
 
-![](/images/wp/2022/01/DesigningData-IntensiveApplications-228x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/DesigningData-IntensiveApplications-228x300.jpg)
 
 In the current era of software engineering data is everywhere and data is king. Increasingly it’s not only about designing good applications but also about creating and capturing the data flows from those applications, to get business insights. Designing Data-Intensive Applications provides a sort of mini-encyclopedia of data engineering. It covers broad topics in considerable detail and discusses many of the principles and issues of data-intensive, distributed systems. Given that data is becoming increasingly important, improving your knowledge in that area is useful.
 
@@ -127,13 +127,13 @@ This is one of the best books for people that are interested in Data application
 
 ## Microservice Architecture: aligning principles, practices, and culture
 
-![](/images/wp/2022/01/MicroServiceArchitecture-228x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/MicroServiceArchitecture-228x300.jpg)
 
 Microservices can have a positive impact on your enterprise–just ask Amazon and Netflix–but you can fall into many traps if you don’t approach them in the right way. This practical guide covers the entire microservices landscape, including the principles, technologies, and methodologies of this unique, modular style of system building. You’ll learn about the experiences of organizations around the globe that have successfully adopted microservices.
 
 ## Building Microservices: Designing Fine-Grained Systems
 
-![](/images/wp/2022/01/BuildingMicroService-229x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/BuildingMicroService-229x300.jpg)
 
 As organizations shift from monolithic applications to smaller, self-contained microservices, distributed systems have become more fine-grained. But developing these new systems brings its host of problems. This expanded second edition takes a holistic view of topics that you need to consider when building, managing, and scaling  
 microservices architectures.
@@ -149,14 +149,14 @@ The data structure is another very important topic and there are two famous book
 
 ## Introduction to Algorithms
 
-![](/images/wp/2022/01/IntroductionAlgorithms-267x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/IntroductionAlgorithms-267x300.jpg)
 
 Introduction to Algorithms is nothing less than an essential guide to algorithms of all kinds. It is very comprehensive and accessible to all kinds of readers, beginners, and professionals alike. It is worded and covers a lot of subject matter. But it also is kind of complex and not so easy to follow.  
 It covers topics such as data structures, fast algorithms, polynomial-time algorithms for seemingly intractable problems, graph theory, computational geometry, and much more. While it contains some examples in pseudo-code, it still is a very theoretical book in my eyes.
 
 ## Algorithms 4th Edition
 
-![](/images/wp/2022/01/Algorithms-241x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/Algorithms-241x300.jpg)
 
 ---
 
@@ -164,21 +164,21 @@ And of course, as this is a motivational post and is the beginning of the year I
 
 ## Data Mesh – Delivering Data-Driven value at scale
 
-![](/images/wp/2022/01/dataMesh-227x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/dataMesh-227x300.jpg)
 
 Is not a new concept but I believe that this will be a trending topic this year.  
 You can check more about this in my Medium post [here](https://towardsdatascience.com/data-engineer-patterns-architecture-the-future-7c3a01737053) or a Portuguese version [here](https://medium.com/data-hackers/data-engineer-patterns-architecture-the-future-portugues-89ebff8936).
 
 And my idea is that Data Mesh and Data Fabric are the same things and they are explained by this picture.  
-![](/images/wp/2022/01/data-mesh.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/data-mesh.jpg)
 
 ## Microservice Patterns: With examples in Java
 
-![](/images/wp/2022/01/MicroservicePatterns-236x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/MicroservicePatterns-236x300.jpg)
 
 ## Reactive Systems in Java: Resilient, Event-Driven Architecture with Quarkus
 
-![](/images/wp/2022/01/ReactiveSystemsJava-229x300.jpg)
+![](/old-igfasouza-blog/images/wp/2022/01/ReactiveSystemsJava-229x300.jpg)
 
 ---
 

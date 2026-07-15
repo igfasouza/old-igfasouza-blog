@@ -12,7 +12,7 @@ description: How’s it going there? Jupyter Notebook is a popular application t
 image: wp/2018/03/jupyter.png
 ---
 
-![](/images/wp/2018/03/jupyter.png)
+![](/old-igfasouza-blog/images/wp/2018/03/jupyter.png)
 
 **How’s it going there?**
 

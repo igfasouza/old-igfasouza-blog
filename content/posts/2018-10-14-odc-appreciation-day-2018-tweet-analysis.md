@@ -16,7 +16,7 @@ image: wp/2018/10/oracle-developer-community.png
 
 Last Thursday was the Oracle Developer Community ODC Appreciation Day 2018 [#ThanksODC](https://oracle-base.com/blog/2018/09/27/oracle-developer-community-odc-appreciation-day-2018-thanksodc/)
 
-I came across with the #ThanksODC idea Thursday afternoon and of course, I join with a blog post as well. [Here](/odc-appreciation-day-2018-oracle-visual-builder-cloud-and-oracle-jet/)
+I came across with the #ThanksODC idea Thursday afternoon and of course, I join with a blog post as well. [Here](/old-igfasouza-blog/odc-appreciation-day-2018-oracle-visual-builder-cloud-and-oracle-jet/)
 
 And you can check the result of #ThanksODC [here](https://oracle-base.com/blog/2018/10/12/odc-appreciation-day-2018-its-a-wrap-thanksodc/)
 
@@ -30,7 +30,7 @@ Today I decided to do my tweets analysis here and see some nice insights.
 
 You can check my old post to see an explanation about the idea and maths behind
 
-> [Six Nations](/six-nations/)
+> [Six Nations](/old-igfasouza-blog/six-nations/)
 
 **Let’s check the data.**
 

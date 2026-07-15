@@ -12,7 +12,7 @@ description: Hey you! This is a start point for me to explore some ideas to lear
 image: wp/2021/04/kafka_idea.jpg
 ---
 
-![](/images/wp/2021/04/kafka_idea.jpg)
+![](/old-igfasouza-blog/images/wp/2021/04/kafka_idea.jpg)
 
 **Hey you!**
 
@@ -20,30 +20,30 @@ This is a start point for me to explore some ideas to learn Kafka and Event Stre
 
 Is it possible to learn Kafka and Event Streams with fun?
 
-[Stream processing](/what-is-stream-processing/) is the act of continuously incorporating new data to compute a result. Streaming is a data distribution technique where data producers write data records into an ordered data stream from which data consumers can read that data in the same order. Here is a simple data streaming diagram illustrating a data producer, a data stream, and a data consumer.
+[Stream processing](/old-igfasouza-blog/what-is-stream-processing/) is the act of continuously incorporating new data to compute a result. Streaming is a data distribution technique where data producers write data records into an ordered data stream from which data consumers can read that data in the same order. Here is a simple data streaming diagram illustrating a data producer, a data stream, and a data consumer.
 
-![](/images/wp/2019/10/data-streaming-introduction-1-1024x163.png)
+![](/old-igfasouza-blog/images/wp/2019/10/data-streaming-introduction-1-1024x163.png)
 
 And if you look only at the Data Stream part you will see something like a Led Strip
 
-![](/images/wp/2021/04/led_stripe-1024x256.png)
+![](/old-igfasouza-blog/images/wp/2021/04/led_stripe-1024x256.png)
 
 The question is can I use a led Strip to teach Event Stream nicely and funnily?
 
 I came with two ideas
 
-- Led Race game – [blog](/led-race-another-dublinmaker/)
-- Anki Overdrive – [blog](/connected-vehicles-self-driving-cars-with-kafka/)
+- Led Race game – [blog](/old-igfasouza-blog/led-race-another-dublinmaker/)
+- Anki Overdrive – [blog](/old-igfasouza-blog/connected-vehicles-self-driving-cars-with-kafka/)
 
-![](/images/wp/2021/04/kafka_learn-1024x310.jpg)
+![](/old-igfasouza-blog/images/wp/2021/04/kafka_learn-1024x310.jpg)
 
 ## Led Race game
 
 Led Race is a Raspberry PI Led Strip game. Minimalist cars race with a Led strip and two switches where the speed of the car is proportional to the pulsations of the control button. In this scenario, I can explore how to generate data and build a scoreboard and game statistics using Kafka.
 
-![](/images/wp/2021/04/ledrace_kafka011-1024x537.png)
+![](/old-igfasouza-blog/images/wp/2021/04/ledrace_kafka011-1024x537.png)
 
-I can explore the same ideas from my [weather station blog](/kafka-weather-station/) and It is possible to combine them with IOT, connected vehicles, Kafka at the Edge, and several others ideas.
+I can explore the same ideas from my [weather station blog](/old-igfasouza-blog/kafka-weather-station/) and It is possible to combine them with IOT, connected vehicles, Kafka at the Edge, and several others ideas.
 
 ## Anki Overdrive
 
@@ -51,20 +51,20 @@ Anki Overdrive is an intelligent battle racing system that lets you explore the 
 The Anki provides an API where you can get information in real-time from the game.  
 Again I can explore how to generate data and build a scoreboard and game statistics using Kafka.
 
-![](/images/wp/2021/04/anki_kafka01-1024x537.png)
+![](/old-igfasouza-blog/images/wp/2021/04/anki_kafka01-1024x537.png)
 
-I can explore the same ideas from my [weather station blog](/kafka-weather-station/) and It is possible to combine them with IOT, connected vehicles, Kafka at the Edge, and several others ideas.
+I can explore the same ideas from my [weather station blog](/old-igfasouza-blog/kafka-weather-station/) and It is possible to combine them with IOT, connected vehicles, Kafka at the Edge, and several others ideas.
 
 And as you can see both ideas are similar in the sense that I can add and explore several scenarios around Data Stream.
 
-![](/images/wp/2021/03/diagran-1024x801.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/diagran-1024x801.jpg)
 
-Each [producer](/real-time-locating-system-with-kafka/) could be a sensor, an IOT device, or a machine and I can use a Raspberry PI to show that. On the Kafka Cluster each broker, leader, and follower could be a Raspberry PI as well, and of Course the consumer as well.
+Each [producer](/old-igfasouza-blog/real-time-locating-system-with-kafka/) could be a sensor, an IOT device, or a machine and I can use a Raspberry PI to show that. On the Kafka Cluster each broker, leader, and follower could be a Raspberry PI as well, and of Course the consumer as well.
 
 This means that a bunch of Raspberry Pis and a Led Strip is a basic start point.  
-The best part is that now with Raspberry PI 4 8g it is possible to [install Kafka](/raspberry-pi-kafka-cluster/) and show the concept of [Kafka at the edge](/kafka-at-the-edge-with-raspberry-pi/).
+The best part is that now with Raspberry PI 4 8g it is possible to [install Kafka](/old-igfasouza-blog/raspberry-pi-kafka-cluster/) and show the concept of [Kafka at the edge](/old-igfasouza-blog/kafka-at-the-edge-with-raspberry-pi/).
 
-![](/images/wp/2021/03/kafka_at_the_edge1.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/kafka_at_the_edge1.jpg)
 
 ## Ideas outside
 

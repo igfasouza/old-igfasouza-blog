@@ -11,7 +11,7 @@ description: What’s the crack jack? If you like me use Twitter as a source of 
 image: wp/2020/05/list.jpg
 ---
 
-![](/images/wp/2020/05/list.jpg)
+![](/old-igfasouza-blog/images/wp/2020/05/list.jpg)
 
 **What’s the crack jack?**
 
@@ -19,7 +19,7 @@ If you like me use Twitter as a source of information this will somehow help you
 
 I came with this post idea after I saw the [Confluent Community Catalyst program](https://www.confluent.io/nominate/), and of course here we can get a nice list to start.
 
-![](/images/wp/2020/05/c.jpeg)
+![](/old-igfasouza-blog/images/wp/2020/05/c.jpeg)
 
 This is not an exhaustive list, so if you know someone that you think should be here, please post a comment with. And of course, some here are Kafka related.
 

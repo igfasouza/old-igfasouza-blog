@@ -13,7 +13,7 @@ description: Hey you! Last week 20th July was the Dublin Maker 2019. So, let’s
 image: wp/2019/08/IMG_20190721_084104.jpg
 ---
 
-![](/images/wp/2019/08/IMG_20190721_084104-768x1024.jpg)
+![](/old-igfasouza-blog/images/wp/2019/08/IMG_20190721_084104-768x1024.jpg)
 
 **Hey you!**
 
@@ -32,7 +32,7 @@ After few days looking at the instructions and the components I had the idea to 
 
 Apparent I’m the first one to do it.
 
-![](/images/wp/2019/08/20190721_231703-840x1024.jpg)
+![](/old-igfasouza-blog/images/wp/2019/08/20190721_231703-840x1024.jpg)
 
 The project is really simple. I’m using the WS2813 led strip and using the [API](https://github.com/jgarff/rpi_ws281x) that I found on the internet.
 
@@ -45,7 +45,7 @@ The makeymakey part is just one aluminium foil and play-doh.
 
 I used the GPIO 10 (pin 19) and 18 (pin 12) for LED\_PIN and LED\_DMA and GPIO 9 (pin 6) for Ground.
 
-![](/images/wp/2019/08/20190801_181128-1024x768.jpg)
+![](/old-igfasouza-blog/images/wp/2019/08/20190801_181128-1024x768.jpg)
 
 I created a simple version of the Led Race, but there are lots of space for improvement.
 

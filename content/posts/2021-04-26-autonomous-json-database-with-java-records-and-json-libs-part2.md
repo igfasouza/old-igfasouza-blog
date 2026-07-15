@@ -13,11 +13,11 @@ description: How’s it going there? After I posted my blog about Autonomous JSO
 image: wp/2021/04/duke_json02.jpg
 ---
 
-![](/images/wp/2021/04/ajd.jpg)
+![](/old-igfasouza-blog/images/wp/2021/04/ajd.jpg)
 
 **How’s it going there?**
 
-After I posted my blog about [Autonomous JSON Database ADJ and Json libs](/autonomous-json-database-with-java-records-and-json-libs/), some people got to me asking and informing me that we can map directly to and from OSON (JSON type) without having to parser or serialize JSON text, and for that, we can use the “*createDocumentFrom*” method. So I decide to explore this as well.
+After I posted my blog about [Autonomous JSON Database ADJ and Json libs](/old-igfasouza-blog/autonomous-json-database-with-java-records-and-json-libs/), some people got to me asking and informing me that we can map directly to and from OSON (JSON type) without having to parser or serialize JSON text, and for that, we can use the “*createDocumentFrom*” method. So I decide to explore this as well.
 
 This is a kind of a continuation from my previous blog where I explored the “*createDocumentFromString*” method, and in this one, I’ll explore the “*createDocumentFrom*” method.
 
@@ -29,7 +29,7 @@ Oracle provides some [examples](https://github.com/oracle/json-in-db/tree/master
 
 Again I did the test with the most popular JSON libs; JSON-B, Jackson, and Gson.
 
-![](/images/wp/2021/04/json.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/04/json.jpg)  
 Picture1: most popular JSON libs
 
 You can check and get the code in my [GitHub](https://github.com/igfasouza/Oracle_AJD_java14).
@@ -98,7 +98,7 @@ I checked out the new [Quarkus 1.13.2.Final released – Oracle JDBC driver exte
 
 You can see everything about JDBC [here](https://quarkus.io/guides/datasource) and an example with Oracle [here](https://blogs.oracle.com/developers/configuring-the-oracle-jdbc-drivers-with-quarkus).
 
-![](/images/wp/2021/04/duke_json02.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/04/duke_json02.jpg)  
 Picture2: Java Duke serialization and deserialization
 
 ## Conclusion

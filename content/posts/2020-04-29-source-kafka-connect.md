@@ -12,17 +12,17 @@ description: How’s the man? This blog post is part of my series of posts regar
 image: wp/2020/04/source-connect-kafka.png
 ---
 
-![](/images/wp/2020/04/source-connect-kafka.png)
+![](/old-igfasouza-blog/images/wp/2020/04/source-connect-kafka.png)
 
 **How’s the man?**
 
 This blog post is part of my series of posts regarding Kafka Connect.  
 If you’re not familiar with Kafka, I suggest you have a look at some of my previous post;
 
-[What is Kafka?](/what-is-kafka/)  
-[Kafka Connect Overview](/kafka-connect-overview/)  
-[Kafka Connector Architecture](/kafka-connector-architecture/)  
-[Kafka Connect](/kafka-connect/)
+[What is Kafka?](/old-igfasouza-blog/what-is-kafka/)  
+[Kafka Connect Overview](/old-igfasouza-blog/kafka-connect-overview/)  
+[Kafka Connector Architecture](/old-igfasouza-blog/kafka-connector-architecture/)  
+[Kafka Connect](/old-igfasouza-blog/kafka-connect/)
 
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 
@@ -310,7 +310,7 @@ public void stop() {
 
 I create one package model where I add my DTO to the fields that I used in my schema and package shema.
 
-![](/images/wp/2020/04/class.jpg)
+![](/old-igfasouza-blog/images/wp/2020/04/class.jpg)
 
 WeatherAPIClient this class just calls the API and passes the list of cities.  
 I use the WeatherAPIConfig config to get all configurations;
@@ -411,7 +411,7 @@ public ConfigDef config() {
 }
 ```
 
-![](/images/wp/2020/04/Kafka-Connect-Source.png)
+![](/old-igfasouza-blog/images/wp/2020/04/Kafka-Connect-Source.png)
 
 ## 11. Deploy
 

@@ -67,7 +67,7 @@ spark = SparkSession.builder.master("local[*]").getOrCreate()
 
 And That’s all – Spark is now running in local mode on a free cloud instance. It’s not very powerful, but it’s a really easy way to get familiar with Spark without installing it locally.
 
-You can have a look in my [post](/jupyter-notebook/) about Jupyter-Notebook for more examples.
+You can have a look in my [post](/old-igfasouza-blog/jupyter-notebook/) about Jupyter-Notebook for more examples.
 
 **Important things to remember:**
 

@@ -14,11 +14,11 @@ description: How’s the form? if you’re not familiar with Big Data or Data la
 image: wp/2019/05/apache-kafka.png
 ---
 
-![](/images/wp/2019/05/apache-kafka-1024x1024.png)
+![](/old-igfasouza-blog/images/wp/2019/05/apache-kafka-1024x1024.png)
 
 **How’s the form?**
 
-if you’re not familiar with Big Data or Data lake, I suggest you have a look on my previous post “[What is Big Data?](/what-is-big-data/)” and “[What is data lake?](/what-is-data-lake/)” before.  
+if you’re not familiar with Big Data or Data lake, I suggest you have a look on my previous post “[What is Big Data?](/old-igfasouza-blog/what-is-big-data/)” and “[What is data lake?](/old-igfasouza-blog/what-is-data-lake/)” before.  
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 
 Table of contents
@@ -43,7 +43,7 @@ Kafka is designed for distributed high throughput systems. Kafka tends to work v
 Other …  
 Apache Kafka is a distributed publish-subscribe messaging system and a robust queue that can handle a high volume of data and enables you to pass messages from one end-point to another. Kafka is suitable for both offline and online message consumption. Kafka messages are persisted on the disk and replicated within the cluster to prevent data loss. Kafka is built on top of the ZooKeeper synchronization service. It integrates very well with Apache Storm and Spark for real-time streaming data analysis.
 
-![](/images/wp/2019/05/kafka-architecture.png)
+![](/old-igfasouza-blog/images/wp/2019/05/kafka-architecture.png)
 
 **Producers**
 
@@ -57,7 +57,7 @@ Consumers read the messages of a set of partitions of a topic of their choice at
 
 A topic is a feed name or category to which records are published. Topics in Kafka are always multi-subscriber — that is, a topic can have zero, one, or many consumers that subscribe to the data written to it. For each topic, the Kafka cluster maintains a partition log that looks like this:
 
-![](/images/wp/2019/05/log_anatomy.png)
+![](/old-igfasouza-blog/images/wp/2019/05/log_anatomy.png)
 
 Topics are logs that receive data from the producers and store them across their partitions. Producers always write new messages at the end of the log.
 
@@ -69,7 +69,7 @@ A topic may have many partitions so that it can handle an arbitrary amount of da
 
 Each partitioned message has a unique sequence ID called an offset. For example, in Partition 1, the offset is marked from 0 to 9. The offset is the position in the log where the consumer last consumed or read a message.
 
-![](/images/wp/2019/05/off.png)
+![](/old-igfasouza-blog/images/wp/2019/05/off.png)
 
 **Distribution**
 
@@ -117,7 +117,7 @@ Kafka has four core APIs:
 - The Streams API allows an application to act as a stream processor, consuming an input stream from one or more topics and producing an output stream to one or more output topics, effectively transforming the input streams to output streams.
 - The Connector API allows building and running reusable producers or consumers that connect Kafka topics to existing applications or data systems. For example, a connector to a relational database might capture every change to a table.
 
-![](/images/wp/2019/05/maxresdefault-1024x576.jpg)
+![](/old-igfasouza-blog/images/wp/2019/05/maxresdefault-1024x576.jpg)
 
 Apache describes Kafka as a distributed streaming platform that lets us:
 

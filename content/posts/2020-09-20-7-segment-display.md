@@ -15,7 +15,7 @@ description: What’s the crack jack? Table of contents 1. 7-Segment Display 2. 
 image: wp/2020/09/led01.jpg
 ---
 
-![](/images/wp/2020/09/led01.jpg)
+![](/old-igfasouza-blog/images/wp/2020/09/led01.jpg)
 
 **What’s the crack jack?**
 
@@ -33,7 +33,7 @@ image: wp/2020/09/led01.jpg
 
 The 7-segment display, also written as “seven segment display”, consists of seven LEDs (hence its name) arranged in a rectangular fashion as shown. Each of the seven LEDs is called a segment because when illuminated the segment forms part of a numerical digit (both Decimal and Hex) to be displayed. An additional 8th LED is sometimes used within the same package thus allowing the indication of a decimal point (DP).
 
-![](/images/wp/2020/09/led02.jpg)  
+![](/old-igfasouza-blog/images/wp/2020/09/led02.jpg)  
 A 7-segment is a packaged set of 8 LEDs (7 number-segments & 1 decimal point).
 
 I have the “***hdsp-c1g1***” model and it is a Common-Anode.
@@ -42,11 +42,11 @@ I have the “***hdsp-c1g1***” model and it is a Common-Anode.
 
 Common anode means that the anode (positive) side of all of the LEDs is electrically connected at one pin, and each LED cathode has its own pin. So turning on any particular segment will involve running a current from this common anode (positive) pin to the particular cathode (negative) pin for the desired segment.
 
-![](/images/wp/2020/09/anode.gif)
+![](/old-igfasouza-blog/images/wp/2020/09/anode.gif)
 
 Common cathode means that the cathodes of all of the LEDs are common and connected to a single pin. The anode for each LED has its own pin. So driving one of these means running a current from the particular anode (positive) pin for the desired segment to the common cathode pin.
 
-![](/images/wp/2020/09/cathode.gif)
+![](/old-igfasouza-blog/images/wp/2020/09/cathode.gif)
 
 The way that you are diving the 7-segment involves using a separate pin to drive each segment, so you use 8 pins of the Arduino to drive the display.
 
@@ -62,22 +62,22 @@ The way that you are diving the 7-segment involves using a separate pin to drive
 
 Common-Anode 7-segment display
 
-![](/images/wp/2020/09/7-seg-disp-ca.png)
+![](/old-igfasouza-blog/images/wp/2020/09/7-seg-disp-ca.png)
 
 My 7-segment display has its common pins (COM) connected to the +5V pin.  
 If a pin turns off, the corresponding segment will turn on. It’s because when the pin is on, the voltage difference between the pin and the +5V is 0. It is the same if the +5V was replaced by 0V. We can’t connect the COM to the GND because the LEDs are like diodes so they wouldn’t light up at all.
 
-![](/images/wp/2020/09/5611bh_-_compressed_O9OVlTS9tu.png)
+![](/old-igfasouza-blog/images/wp/2020/09/5611bh_-_compressed_O9OVlTS9tu.png)
 
 For Raspberry PI you need to check the GPIO numbers. Note that the pin number is not the same thing as the GPIO number.
 
-![](/images/wp/2020/09/Rasp_GPIO.png)
+![](/old-igfasouza-blog/images/wp/2020/09/Rasp_GPIO.png)
 
 For my example here I create a table to map:
 
-![](/images/wp/2020/09/Screenshot-2020-09-20-at-19.07.25-190x300.png)
+![](/old-igfasouza-blog/images/wp/2020/09/Screenshot-2020-09-20-at-19.07.25-190x300.png)
 
-![](/images/wp/2020/09/Screenshot-2020-09-20-at-17.30.05-195x300.png)
+![](/old-igfasouza-blog/images/wp/2020/09/Screenshot-2020-09-20-at-17.30.05-195x300.png)
 
 ## 5. Code
 
@@ -386,11 +386,11 @@ PI4J provides a friendly object-oriented I/O API and implementation libraries fo
 
 This is the Number for the PI 3 B model.
 
-![](/images/wp/2020/09/Pi4J_GPIO-165x300.png)
+![](/old-igfasouza-blog/images/wp/2020/09/Pi4J_GPIO-165x300.png)
 
 Because the PI4J use a different GPIO number I add a new column in my table;
 
-![](/images/wp/2020/09/Screenshot-2020-09-20-at-19.12.01-239x300.png)
+![](/old-igfasouza-blog/images/wp/2020/09/Screenshot-2020-09-20-at-19.12.01-239x300.png)
 
 **Raspberry PI – Java – Pi4j**
 
@@ -549,9 +549,9 @@ public class SevenSegmentsDisplay {
 
 **Results**
 
-![](/images/wp/2020/09/arduino-246x300.png)
+![](/old-igfasouza-blog/images/wp/2020/09/arduino-246x300.png)
 
-![](/images/wp/2020/09/raspberry-300x145.png)
+![](/old-igfasouza-blog/images/wp/2020/09/raspberry-300x145.png)
 
 > Just playing …
 >

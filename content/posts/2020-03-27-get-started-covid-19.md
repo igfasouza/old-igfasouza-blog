@@ -11,7 +11,7 @@ description: How’s the craic? Get Started COVID-19 You are probably aware abou
 image: wp/2020/03/1800x1200_coronavirus_1.jpg
 ---
 
-![](/images/wp/2020/03/1800x1200_coronavirus_1-1024x683.jpg)
+![](/old-igfasouza-blog/images/wp/2020/03/1800x1200_coronavirus_1-1024x683.jpg)
 
 **How’s the craic?**
 
@@ -385,7 +385,7 @@ Stat.plot(title='Statistical Data Vs. Days Passed')
 plt.savefig('Stat')
 ```
 
-![](/images/wp/2020/03/png_to_gif.gif)
+![](/old-igfasouza-blog/images/wp/2020/03/png_to_gif.gif)
 
 **2)** You can visualize the impact of [social distancing](https://towardsdatascience.com/covid19-visualising-the-impact-of-social-distancing-in-python-8567c14a3a73)
 
@@ -428,7 +428,7 @@ plt.text(145, 90000, title, fontsize=14)
 plt.savefig(title)
 ```
 
-![](/images/wp/2020/03/result.gif)
+![](/old-igfasouza-blog/images/wp/2020/03/result.gif)
 
 **3)** You cam use this code in both ideas to generate the animated gif.
 

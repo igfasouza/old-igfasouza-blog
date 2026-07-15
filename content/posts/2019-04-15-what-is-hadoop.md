@@ -12,11 +12,11 @@ description: Alright, Boyo? if you’re not familiar with Big Data, I suggest yo
 image: wp/2019/04/hadoop-logo.png
 ---
 
-![](/images/wp/2019/04/hadoop-logo.png)
+![](/old-igfasouza-blog/images/wp/2019/04/hadoop-logo.png)
 
 **Alright, Boyo?**
 
-if you’re not familiar with Big Data, I suggest you have a look on my post “[What is Big Data](/what-is-big-data/)?  
+if you’re not familiar with Big Data, I suggest you have a look on my post “[What is Big Data](/old-igfasouza-blog/what-is-big-data/)?  
 ” before.  
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 
@@ -68,7 +68,7 @@ Refers to the collection of common utilities and libraries that support other Ha
 **B. How the Hadoop Distributed File System (HDFS) works**  
 Hadoop has a file system that is much like the one on your desktop computer, but it allows us to distribute files across many machines. HDFS organizes information into a consistent set of file blocks and storage blocks for each node. In the Apache distribution, the file blocks are 64MB and the storage blocks are 512 KB. Most of the nodes are data nodes, and there are also copies of the data. Name nodes exist to keep track of where all the file blocks reside.
 
-![](/images/wp/2019/04/hdfs-data-blocks.jpg)
+![](/old-igfasouza-blog/images/wp/2019/04/hdfs-data-blocks.jpg)
 
 Each node in a Hadoop instance typically has a single namenode, and a cluster of datanodes form the HDFS cluster. The situation is typical because each node does not require a datanode to be present. Each datanode serves up blocks of data over the network using a block protocol specific to HDFS. The file system uses the TCP/IP layer for communication. Clients use Remote procedure call (RPC) to communicate with each other. With the default replication value, 3, data is stored on three nodes: two on the same rack, and one on a different rack. Data nodes can talk to each other to rebalance data, to move copies around, and to keep the replication of data high.
 
@@ -87,7 +87,7 @@ Serves read and write requests from the clients.
 
 **C. How MapReduce works**
 
-![](/images/wp/2019/04/a11-1024x475.png)
+![](/old-igfasouza-blog/images/wp/2019/04/a11-1024x475.png)
 
 Map Reduce is a really powerful programming model that was built by some smart guys at Google. It helps to process really large sets of data on a cluster using a parallel distributed algorithm.
 
@@ -191,7 +191,7 @@ Hadoop itself is not dying but MapReduce that is batch orientate is being replac
 
 With Hadoop 3.0 YARN will enable running all types of clusters and mix CPU and GPU intensive processes. For example, by integrating TensorFlow with YARN an end-user can seamlessly manage resources across multiple Deep Learning applications and other workloads, such as Spark, Hive or MapReduce.
 
-![](/images/wp/2019/04/xenonstack-what-is-apache-hadoop-3.png)
+![](/old-igfasouza-blog/images/wp/2019/04/xenonstack-what-is-apache-hadoop-3.png)
 
 The major changes are:
 

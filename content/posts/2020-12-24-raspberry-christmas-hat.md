@@ -13,7 +13,7 @@ description: What’s the story Rory? Today I want to show some Christmas projec
 image: wp/2020/12/Christmas-hat.jpg
 ---
 
-![](/images/wp/2020/12/Christmas-hat.jpg)
+![](/old-igfasouza-blog/images/wp/2020/12/Christmas-hat.jpg)
 
 **What’s the story Rory?**
 
@@ -56,22 +56,22 @@ From the code sample, you can get the GPIO numbers to use with PI4j
 
 From the [Python API](https://github.com/modmypi/Programmable-Christmas-Star/blob/master/star.py) you can get the GPIO numbers to use with PI4j
 
-![](/images/wp/2020/12/EpEses6XUAcgqQx-225x300.jpg)
+![](/old-igfasouza-blog/images/wp/2020/12/EpEses6XUAcgqQx-225x300.jpg)
 
 The idea here is that all hats are just boards with some LEDs, and this makes the project like an electronics project for blinking LEDs.  
-We can use the PWM idea, “Pulse Width Modulation” that I already explained [here](/raspberry-pi-servo-java-duke-robot/), but let me explain from the LEDs perspective.
+We can use the PWM idea, “Pulse Width Modulation” that I already explained [here](/old-igfasouza-blog/raspberry-pi-servo-java-duke-robot/), but let me explain from the LEDs perspective.
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Pulse-width_modulation)
 
 > The term duty cycle describes the proportion of ‘on’ time to the regular interval or ‘period’ of time; a low duty cycle corresponds to low power because the power is off for most of the time. Duty cycle is expressed in percent, 100% being fully on. When a digital signal is on half of the time and off the other half of the time, the digital signal has a duty cycle of 50% and resembles a “square” wave. When a digital signal spends more time in the on state than the off state, it has a duty cycle of >50%. When a digital signal spends more time in the off state than the on state, it has a duty cycle of <50%. Here is a pictorial that illustrates these three scenarios.
 
-![](/images/wp/2020/12/Duty_Cycle_Examples.png)
+![](/old-igfasouza-blog/images/wp/2020/12/Duty_Cycle_Examples.png)
 
 You can find examples and samples for all Hats in Python, but because I support the [#JavaOnRaspberryPi](https://twitter.com/hashtag/JavaOnRaspberryPi) idea, let’s see how to use them with Java.  
 Remember to use the hashtag #JavaOnRaspberryPi on Twitter to show the world Raspberry Pi with Java.
 
 **PI4J**  
-You can check my post to start with [PI4J](/7-segment-display/) but for these hats what you need to understand is the [Pwm Example](https://github.com/Pi4J/pi4j/blob/master/pi4j-example/src/main/java/PwmExample.java)
+You can check my post to start with [PI4J](/old-igfasouza-blog/7-segment-display/) but for these hats what you need to understand is the [Pwm Example](https://github.com/Pi4J/pi4j/blob/master/pi4j-example/src/main/java/PwmExample.java)
 
 |  |  |
 | --- | --- |
@@ -95,19 +95,19 @@ Of course, you can do some Christmas ideas with any other hat.
 
 **Sensehat** </sense-hat/>
 
-You can create your Christmas tree using my [Micronaut example](/micronaut-velocity-with-raspberry-pi/). [GitHub](https://github.com/igfasouza/micronaut-velocity-8x8-led-matrix-sense-hat/blob/master/src/main/java/example/micronaut/LedController.java) Or just using [this](https://github.com/cinci/rpi-sense-hat-java).
+You can create your Christmas tree using my [Micronaut example](/old-igfasouza-blog/micronaut-velocity-with-raspberry-pi/). [GitHub](https://github.com/igfasouza/micronaut-velocity-8x8-led-matrix-sense-hat/blob/master/src/main/java/example/micronaut/LedController.java) Or just using [this](https://github.com/cinci/rpi-sense-hat-java).
 
-![](/images/wp/2020/12/PXL_20201223_210745306-300x226.jpg)
+![](/old-igfasouza-blog/images/wp/2020/12/PXL_20201223_210745306-300x226.jpg)
 
-![](/images/wp/2020/12/PXL_20201223_210803055-300x260.jpg)
+![](/old-igfasouza-blog/images/wp/2020/12/PXL_20201223_210803055-300x260.jpg)
 
 **E-ink display**
 
-![](/images/wp/2020/12/PXL_20201221_1607435032.jpg)
+![](/old-igfasouza-blog/images/wp/2020/12/PXL_20201221_1607435032.jpg)
 
 I know that [4tronix](https://shop.4tronix.co.uk/) has some Christmas Micro Bit hats and people did some hack around to use with a Raspberry PI, But If you know any other Christmas Hat, please let me know in the comments.
 
-![](/images/wp/2020/12/Screenshot-2020-12-24-at-12.18.52.png)
+![](/old-igfasouza-blog/images/wp/2020/12/Screenshot-2020-12-24-at-12.18.52.png)
 
 As a good developer, I always get confused about Christmas and Halloween as 25 Dec is equal to 31 Oct
 

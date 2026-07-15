@@ -12,7 +12,7 @@ description: What’s the crack jack? Yesterday I went to Predict Conference, an
 image: wp/2019/10/20191001_160006.jpg
 ---
 
-![](/images/wp/2019/10/predict-logo-tag-800.png)
+![](/old-igfasouza-blog/images/wp/2019/10/predict-logo-tag-800.png)
 
 **What’s the crack jack?**
 
@@ -24,7 +24,7 @@ My first time at Predict Conference, my first impression: it is a nice conferenc
 With nearly 1000 attendees, more than 30 speakers, over 2 stages.  
 Women are more and more present in tech.
 
-![](/images/wp/2019/10/20191001_160006-1024x768.jpg)
+![](/old-igfasouza-blog/images/wp/2019/10/20191001_160006-1024x768.jpg)
 
 ## But what is Predict Conference?
 
@@ -44,7 +44,7 @@ Creme Global started Predict in 2015; it is now in its 5th year and has gone fro
 What exciting things can people look forward to?  
 The major themes at Predict this year where Health & Life Sciences, AI and Machine Learning along with Technology and Society (Sustainability/ Government/ Cities/ Privacy);
 
-![](/images/wp/2019/10/20191001_104451-e1570053252935-768x1024.jpg)
+![](/old-igfasouza-blog/images/wp/2019/10/20191001_104451-e1570053252935-768x1024.jpg)
 
 ## It’s not a very deep dive tech conference
 
@@ -87,7 +87,7 @@ He talked about Ensembles, we can’t do it alone, we need alternative perspecti
 **Talk:**  
 Uncertainty and Interpretability – Kevin Kuo
 
-![](/images/wp/2019/10/20191001_112733-1024x768.jpg)
+![](/old-igfasouza-blog/images/wp/2019/10/20191001_112733-1024x768.jpg)
 
 **Talk:**  
 Low-Latency Model Prediction with Video  
@@ -101,7 +101,7 @@ The Fast Track to AI with Serverless – Peter Elger
 AI Live: No Experience Required  
 He showed one Wolfram notebook.
 
-![](/images/wp/2019/10/20191001_145935-1024x768.jpg)
+![](/old-igfasouza-blog/images/wp/2019/10/20191001_145935-1024x768.jpg)
 
 ## But the main topic, in my opinion, was ML & DL buzzwords
 

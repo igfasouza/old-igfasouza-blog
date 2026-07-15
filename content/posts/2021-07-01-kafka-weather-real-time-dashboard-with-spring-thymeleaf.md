@@ -13,20 +13,20 @@ description: How goes the battle? This post is another part of my Kafka weather 
 image: wp/2021/07/spring_kafka.jpg
 ---
 
-![](/images/wp/2021/07/spring_kafka.jpg)
+![](/old-igfasouza-blog/images/wp/2021/07/spring_kafka.jpg)
 
 **How goes the battle?**
 
-This post is another part of my Kafka weather station use case [idea](/kafka-weather-station/).
+This post is another part of my Kafka weather station use case [idea](/old-igfasouza-blog/kafka-weather-station/).
 
 I want to show how I created an app using Spring Boot and Thymeleaf to show a real-time dashboard with Sense Hat temperature data that I read from a Kafka topic. This is another blog about Java on Raspberry PI.
 
-![](/images/wp/2021/07/weather_dashboard01.png)  
+![](/old-igfasouza-blog/images/wp/2021/07/weather_dashboard01.png)  
 Picture 1: The highlighted part of the diagram that this post is focused on.
 
-You can check my [Kafka Producer](/kafka-producer-consumer-overview/) blog and [Kafka at the edge](/kafka-at-the-edge-with-raspberry-pi/) blog, where I explain the Sense Hat producer with Micronaut.
+You can check my [Kafka Producer](/old-igfasouza-blog/kafka-producer-consumer-overview/) blog and [Kafka at the edge](/old-igfasouza-blog/kafka-at-the-edge-with-raspberry-pi/) blog, where I explain the Sense Hat producer with Micronaut.
 
-![](/images/wp/2021/07/Kafka_weather_dashboard01.png)  
+![](/old-igfasouza-blog/images/wp/2021/07/Kafka_weather_dashboard01.png)  
 Picture 2: end-to-end flow
 
 ## Idea
@@ -34,7 +34,7 @@ Picture 2: end-to-end flow
 A Spring Boot web application where I use Thymeleaf to display a real-time dashboard to show Temperature values that I read from a Kafka topic. I use a Websocket to update the data on the page and Spring Kafka to read the Kafka data.  
 The Data came from a Raspberry PI using the Sense Hat.
 
-![](/images/wp/2021/07/spring_weather01.png)  
+![](/old-igfasouza-blog/images/wp/2021/07/spring_weather01.png)  
 Picture 3: I added a REST interface for and a @PostConstruct method producing a message
 
 The program is using Spring-Kafka integration and I add a Kafka producer to get the Sense Hat data and I add a REST interface as well to be able to add some data for testing or if I don’t have the Sense Hat running.
@@ -113,7 +113,7 @@ And I have *kafka.sensehat=true* properties to enable or disable the Sense Hat p
 
 You can get the full code on my [GitHub](https://github.com/igfasouza/Kafka-Spring-dashboard).
 
-![](/images/wp/2021/07/Screenshot-2021-05-31-at-16.25.44.png)  
+![](/old-igfasouza-blog/images/wp/2021/07/Screenshot-2021-05-31-at-16.25.44.png)  
 Picture 4: The end result
 
 ## Kafka

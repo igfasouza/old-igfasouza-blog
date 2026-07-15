@@ -14,11 +14,11 @@ description: How’s it going horse? If you’re not familiar with Kafka, I sugg
 image: wp/2020/08/producer_consumer.jpg
 ---
 
-![](/images/wp/2020/08/producer_consumer.jpg)
+![](/old-igfasouza-blog/images/wp/2020/08/producer_consumer.jpg)
 
 **How’s it going horse?**
 
-If you’re not familiar with Kafka, I suggest you have a look at my previous post “[What is Kafka?](/what-is-kafka/)” before.
+If you’re not familiar with Kafka, I suggest you have a look at my previous post “[What is Kafka?](/old-igfasouza-blog/what-is-kafka/)” before.
 
 This blog is just a quick review of Kafka Producer and Consumer.
 
@@ -45,7 +45,7 @@ Important Producer Settings:
 **Acks**  
 The acks setting specifies acknowledgements that the producer requires the leader to receive before considering a request complete. This setting defines the durability level for the producer.
 
-![](/images/wp/2020/08/acks.png)
+![](/old-igfasouza-blog/images/wp/2020/08/acks.png)
 
 **Max.in.flight.requests.per.connection**  
 The maximum number of unacknowledged requests the client will send on a single connection before blocking. If this setting is greater than 1, pipelining is used when the producer sends the grouped batch to the broker. This improves throughput, but if there are failed sends there is a risk of out-of-order delivery due to retries (if retries are enabled). Note also that excessive pipelining reduces throughput.
@@ -111,7 +111,7 @@ public class SimpleKafkaProducer {
 }
 ```
 
-![](/images/wp/2020/08/producer01.png)  
+![](/old-igfasouza-blog/images/wp/2020/08/producer01.png)  
 High-level overview of Kafka producer components – Kafka the Definitive Guide Book
 
 ## 2. Consumer
@@ -122,15 +122,15 @@ A consumer group is a group of consumers that share the same group id. When a to
 This way you can ensure parallel processing of records from a topic and be sure that your consumers won’t be stepping on each other toes.  
 Each topic consists of one or more partitions. When a new consumer is started it will join a consumer group and Kafka will then ensure that each partition is consumed by only one consumer from that group.
 
-![](/images/wp/2020/08/consumer01.png)  
+![](/old-igfasouza-blog/images/wp/2020/08/consumer01.png)  
 Kafka the Definitive Guide Book
 
-![](/images/wp/2020/08/consumer02.png)  
+![](/old-igfasouza-blog/images/wp/2020/08/consumer02.png)  
 Kafka the Definitive Guide Book
 
 You can have many consumers reading the same records from the topic, as long as they all have different group ids.
 
-![](/images/wp/2020/08/consumer03.png)  
+![](/old-igfasouza-blog/images/wp/2020/08/consumer03.png)  
 Kafka the Definitive Guide Book
 
 Consumer groups provide the following advantages:

@@ -11,7 +11,7 @@ description: 'Hey you! I’ve been thinking an about creating a blog for some ti
 image: wp/2017/11/Hello-World.png
 ---
 
-![](/images/wp/2017/11/Hello-World-1024x538.png)
+![](/old-igfasouza-blog/images/wp/2017/11/Hello-World-1024x538.png)
 
 **Hey you!**
 
@@ -32,4 +32,4 @@ The blog uses a [WordPress theme](https://wordpress.org/themes/twentytwelve/) an
 
 Cheers.
 
-![](/images/wp/2017/11/cafe01-300x225.jpg)
+![](/old-igfasouza-blog/images/wp/2017/11/cafe01-300x225.jpg)

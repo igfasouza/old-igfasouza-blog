@@ -12,16 +12,16 @@ description: How are you? This blog post is part of my series of posts regarding
 image: wp/2020/04/Screenshot-78.png
 ---
 
-![](/images/wp/2020/04/Screenshot-78.png)
+![](/old-igfasouza-blog/images/wp/2020/04/Screenshot-78.png)
 
 **How are you?**
 
 This blog post is part of my series of posts regarding Kafka Connect.  
 If you’re not familiar with Kafka, I suggest you have a look at some of my previous post;
 
-[What is Kafka?](/what-is-kafka/)  
-[Kafka Connect Overview](/kafka-connect-overview/)  
-[Kafka Connector Architecture](/kafka-connector-architecture/)
+[What is Kafka?](/old-igfasouza-blog/what-is-kafka/)  
+[Kafka Connect Overview](/old-igfasouza-blog/kafka-connect-overview/)  
+[Kafka Connector Architecture](/old-igfasouza-blog/kafka-connector-architecture/)
 
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 
@@ -361,7 +361,7 @@ services:
 
 ## 6. Strimzi
 
-![](/images/wp/2020/04/0-9gFlyQBLppFWo-Q4.png)
+![](/old-igfasouza-blog/images/wp/2020/04/0-9gFlyQBLppFWo-Q4.png)
 
 Strimzi simplifies the process of running Apache Kafka in a Kubernetes cluster. It provides container images and Operators for running Kafka on Kubernetes.
 
@@ -375,7 +375,7 @@ Strimzi simplifies the process of running Apache Kafka in a Kubernetes cluster. 
 
 ## 7. Debezium
 
-![](/images/wp/2020/04/debezium.png)
+![](/old-igfasouza-blog/images/wp/2020/04/debezium.png)
 
 Debezium before, it is an open source project for applying the Change Data Capture (CDC) pattern to your applications using Kafka.
 

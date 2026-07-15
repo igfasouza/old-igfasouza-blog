@@ -12,13 +12,13 @@ description: How heya? This is another blog about Raspberry PI, and today I want
 image: wp/2020/10/raspberry_kafka.jpg
 ---
 
-![](/images/wp/2020/10/raspberry_kafka.jpg)
+![](/old-igfasouza-blog/images/wp/2020/10/raspberry_kafka.jpg)
 
 **How heya?**
 
 This is another blog about Raspberry PI, and today I want to show how I did a simple Kafka cluster.
 
-If you’re not familiar with Kafka, I suggest you have a look at my previous post “[What is Kafka?](/what-is-kafka/)” before.
+If you’re not familiar with Kafka, I suggest you have a look at my previous post “[What is Kafka?](/old-igfasouza-blog/what-is-kafka/)” before.
 
 This is a really simple tutorial and you can find similar instructions over the internet.
 

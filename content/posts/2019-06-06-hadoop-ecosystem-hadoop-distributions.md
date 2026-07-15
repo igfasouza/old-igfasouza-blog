@@ -12,7 +12,7 @@ description: Alright boss? The complexity of Hadoop ecosystem comes from having 
 image: wp/2019/06/Hadoop_elephants400px.jpg
 ---
 
-![](/images/wp/2019/06/Hadoop_elephants400px.jpg)
+![](/old-igfasouza-blog/images/wp/2019/06/Hadoop_elephants400px.jpg)
 
 **Alright boss?**
 
@@ -20,7 +20,7 @@ The complexity of Hadoop ecosystem comes from having many tools that can be used
 
 The objective of this Apache Hadoop ecosystem components tutorial is to have an overview of what are the different components of Hadoop ecosystem that make Hadoop so powerful, to give you a nice overview of some Hadoop related products and about somel Hadoop distributions in the market. I did some research and this is what I know or found and probably is not a exhaustive list!
 
-if you’re not familiar with Big Data or Data lake, I suggest you have a look on my previous post “[What is Big Data?](/what-is-big-data/)” and “[What is data lake?](/what-is-data-lake/)” before.  
+if you’re not familiar with Big Data or Data lake, I suggest you have a look on my previous post “[What is Big Data?](/old-igfasouza-blog/what-is-big-data/)” and “[What is data lake?](/old-igfasouza-blog/what-is-data-lake/)” before.  
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 
 ## Hadoop Ecosystem
@@ -29,7 +29,7 @@ This post is a collection of links, videos, tutorials, blogs and books that I fo
 
 Hadoop Ecosystem is neither a programming language nor a service, it is a platform or framework which solves big data problems. You can consider it as a suite which encompasses a number of services (ingesting, storing, analyzing and maintaining) inside it. The Hadoop ecosystem includes both official Apache open source projects and a wide range of commercial tools and solutions. Most of the solutions available in the Hadoop ecosystem are intended to supplement one or two of Hadoop’s four core elements (HDFS, MapReduce, YARN, and Common). However, the commercially available framework solutions provide more comprehensive functionality.
 
-![](/images/wp/2019/06/13.png)
+![](/old-igfasouza-blog/images/wp/2019/06/13.png)
 
 The Hadoop Ecosystem Table <https://hadoopecosystemtable.github.io/>
 
@@ -119,7 +119,7 @@ Get started with Hadoop: From evaluation to your first production cluster
 
 ## Hadoop distributions
 
-![](/images/wp/2019/06/hadoop-distributions-1.png)
+![](/old-igfasouza-blog/images/wp/2019/06/hadoop-distributions-1.png)
 
 When talk about HAdoop distribution the top 3 most famous are Cloudera, Hortonworks and MapR.
 
@@ -189,7 +189,7 @@ Rackspace Apache Hadoop distribution includes common tools like MapReduce, HDFS,
 **Oracle**  
 Oracle offers a Cloudera solution on the top of the Oracle cloud infrastructure.
 
-![](/images/wp/2019/06/Top6HadoopVendorsprovidingBestinClassBigDataSolutions_1.png)
+![](/old-igfasouza-blog/images/wp/2019/06/Top6HadoopVendorsprovidingBestinClassBigDataSolutions_1.png)
 
 **Links**
 

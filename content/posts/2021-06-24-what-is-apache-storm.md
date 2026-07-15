@@ -12,7 +12,7 @@ description: 'How’s the lad? This post is a collection of links, videos, tutor
 image: wp/2021/06/storme_logo.png
 ---
 
-![](/images/wp/2021/06/Apache_Storm_logo.svg_.png)
+![](/old-igfasouza-blog/images/wp/2021/06/Apache_Storm_logo.svg_.png)
 
 **How’s the lad?**
 
@@ -32,9 +32,9 @@ Experts in the software industry consider Storm to be the Hadoop for real-time p
 
 Storm runs topologies instead of the Apache Hadoop MapReduce. Storm topologies are composed of multiple components that are arranged in a directed acyclic graph (DAG). Data flows between the components in the graph. Each component consumes one or more data streams, and can optionally emit one or more streams.
 
-You can check out my previous blog about [Hadoop](/what-is-hadoop/) and [Big Data](/what-is-big-data/).
+You can check out my previous blog about [Hadoop](/old-igfasouza-blog/what-is-hadoop/) and [Big Data](/old-igfasouza-blog/what-is-big-data/).
 
-![](/images/wp/2021/06/storm01.png)  
+![](/old-igfasouza-blog/images/wp/2021/06/storm01.png)  
 Picture 1: Storm Topology
 
 There are essentially two types of nodes involved in any Storm application
@@ -48,7 +48,7 @@ The Nimbus node provides functionality similar to the Apache Hadoop JobTracker. 
 
 A Storm application has essentially four components/abstractions that are responsible for performing the tasks at hand.
 
-![](/images/wp/2021/06/storm02.png)  
+![](/old-igfasouza-blog/images/wp/2021/06/storm02.png)  
 Picture 2: Storm main four components/abstractions
 
 - **Topology**: can be described as a network made of spouts and bolts. It can be compared to the Map and Reduce jobs of Hadoop. Spouts are the data stream source tasks and bolts are the accrual processing tasks. Every node in the network consists of processing logic and links to demonstrate the ways in which data will pass and the processes will be executed. Each time a topology is submitted to the Storm cluster, Nimbus consults the Supervisor nodes about the worker nodes.

@@ -12,11 +12,11 @@ description: How’s it going there? if you’re not familiar with Big Data, I s
 image: wp/2019/04/data_lake.jpg
 ---
 
-![](/images/wp/2019/04/data_lake.jpg)
+![](/old-igfasouza-blog/images/wp/2019/04/data_lake.jpg)
 
 **How’s it going there?**
 
-if you’re not familiar with Big Data, I suggest you have a look on my post “[What is Big Data](/what-is-big-data/)?  
+if you’re not familiar with Big Data, I suggest you have a look on my post “[What is Big Data](/old-igfasouza-blog/what-is-big-data/)?  
 ” before.  
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 
@@ -62,7 +62,7 @@ All data lakes have some distributed file systems. Data should be persisted in r
 To build ingestion and transformation processes, we need to use some computation system that is fault-tolerant, easily scalable, and efficient at processing large data sets. Nowadays, streaming systems are gaining in popularity. Spark, Storm, Flink… At the beginning of BigData, only MapReduce was available, which was (and still is) used as a bulk-processing framework.  
 Scalability in a computation system requires resource management. In a data lake, we have huge amounts of data requiring thousands of nodes. Prioritization is achieved by allocating resources and queuing tasks. Some transformations require more resources; some require less. Major tasks get more resources. This resources allocation role in Hadoop is performed by YARN.
 
-![](/images/wp/2019/04/Untitled-drawing1-552x1024.jpg)
+![](/old-igfasouza-blog/images/wp/2019/04/Untitled-drawing1-552x1024.jpg)
 
 <https://40uu5c99f3a2ja7s7miveqgqu-wpengine.netdna-ssl.com/wp-content/uploads/2017/02/Understanding-data-lakes-EMC.pdf>
 
@@ -89,7 +89,7 @@ This is not an exhaustive list!
 - Storage of all organizational data to support downstream reporting & analysis activities. Some organizations wish to achieve a single storage repository for all types of data. Frequently, the goal is to store as much data as possible to support any type of analysis that might yield valuable findings.
 - Application support. In addition to analysis by people, a data lake can be a data source for a front-end application. The data lake might also act as a publisher for a downstream application (though ingestion of data into the data lake for purposes of analytics remains the most frequently cited use).
 
-![](/images/wp/2019/04/What-is-a-data-lake-according-to-PwC-source.jpg)
+![](/old-igfasouza-blog/images/wp/2019/04/What-is-a-data-lake-according-to-PwC-source.jpg)
 
 Under the umbrella of Data Lake there are many of technologies and concepts. This is not an exhaustive list!
 
@@ -103,7 +103,7 @@ Sources can be clickstreams, data center logs, sensors, APIs or even databases. 
 - Batch processing – Millions of blocks of data processed over long periods of time (hours-to-days).
 - Stream processing – Small batches of data processed in real-time. Stream processing is becoming increasingly valuable for businesses that harness real-time analytics.
 
-![](/images/wp/2019/04/batch.jpg)
+![](/old-igfasouza-blog/images/wp/2019/04/batch.jpg)
 
 **Data Marts**
 
@@ -205,7 +205,7 @@ Visiting a large lake is always a very pleasant feeling. The water in the lake i
 
 This is not a official history about how the name came from. If you know please leave one comment.
 
-![](/images/wp/2019/04/What-is-a-data-lake-1024x888.png)
+![](/old-igfasouza-blog/images/wp/2019/04/What-is-a-data-lake-1024x888.png)
 
 ## 3. Courses
 

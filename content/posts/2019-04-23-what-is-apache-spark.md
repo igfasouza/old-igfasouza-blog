@@ -13,11 +13,11 @@ description: How heya? if you’re not familiar with Big Data, I suggest you hav
 image: wp/2019/04/Apache_spark_logo-512x256.jpeg
 ---
 
-![](/images/wp/2019/04/Apache_spark_logo-512x256.jpeg)
+![](/old-igfasouza-blog/images/wp/2019/04/Apache_spark_logo-512x256.jpeg)
 
 **How heya?**
 
-if you’re not familiar with Big Data, I suggest you have a look on my post “[What is Big Data?](/what-is-big-data/)” before.  
+if you’re not familiar with Big Data, I suggest you have a look on my post “[What is Big Data?](/old-igfasouza-blog/what-is-big-data/)” before.  
 This post is a collection of links, videos, tutorials, blogs and books that I found mixed with my opinion.
 
 ## Table of contents
@@ -48,7 +48,7 @@ Spark also includes MLlib, a library that provides a growing set of machine algo
 
 Spark uses a master-slave architecture. A driver coordinates many distributed workers in order to execute tasks in a distributed manner while a resource manager deals with the resource allocation to get the tasks done.
 
-![](/images/wp/2019/04/cluster-overview.png)
+![](/old-igfasouza-blog/images/wp/2019/04/cluster-overview.png)
 
 **Driver**
 
@@ -63,7 +63,7 @@ Think of it as the “Orchestrator”. The driver is where the main method runs.
 Executers execute the delegated tasks from the driver within a JVM instance. Executors are launched at the beginning of a Spark application and normally run for the whole life span of an application. This method allows for data to persist in memory while different tasks are loaded in and out of the execute throughout the application’s lifespan.  
 The JVM worker environments in Hadoop MapReduce in stark contrast powers down and powers up for each task. The consequence of this is that Hadoop must perform reads and writes on disk at the start and end of every task.
 
-![](/images/wp/2019/04/1-sCv4GPI4qThyFL8Ej3-D9w.png)
+![](/old-igfasouza-blog/images/wp/2019/04/1-sCv4GPI4qThyFL8Ej3-D9w.png)
 
 **Cluster manager**
 
@@ -128,7 +128,7 @@ The main advantage of Datasets is Type safety. When using Datasets we are assure
 
 ## 2. Architecture
 
-![](/images/wp/2019/04/2fig3.jpg)
+![](/old-igfasouza-blog/images/wp/2019/04/2fig3.jpg)
 
 **Spark Core**
 
@@ -173,7 +173,7 @@ Spark was first open sourced in March 2010, and was transferred to the Apache So
 
 Internet powerhouses such as Netflix, Yahoo, and eBay have deployed Spark at massive scale, collectively processing multiple petabytes of data on clusters of over 8,000 nodes. It has quickly become the largest open source community in big data, with over 1000 contributors from 250+ organizations.
 
-![](/images/wp/2019/04/Tips-and-Tricks-for-Apache-Spark.png)
+![](/old-igfasouza-blog/images/wp/2019/04/Tips-and-Tricks-for-Apache-Spark.png)
 
 **In-memory computation**
 

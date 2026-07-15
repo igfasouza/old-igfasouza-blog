@@ -14,14 +14,14 @@ description: What’s up? 2021/03/05 This is another blog about Raspberry PI, an
 image: wp/2021/03/OCI-kafka2.jpg
 ---
 
-![](/images/wp/2021/03/OCI-kafka2.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/OCI-kafka2.jpg)
 
 **What’s up?**  
 2021/03/05
 
-This is another blog about Raspberry PI, and today I want to show how I did a simple Kafka cluster demo. It’s kind of a continuation from my two previous blogs, [Kafka at the edge with Raspberry PI](/kafka-at-the-edge-with-raspberry-pi/) and [Real-Time Locating System with Kafka](/real-time-locating-system-with-kafka/).
+This is another blog about Raspberry PI, and today I want to show how I did a simple Kafka cluster demo. It’s kind of a continuation from my two previous blogs, [Kafka at the edge with Raspberry PI](/old-igfasouza-blog/kafka-at-the-edge-with-raspberry-pi/) and [Real-Time Locating System with Kafka](/old-igfasouza-blog/real-time-locating-system-with-kafka/).
 
-If you’re not familiar with Kafka, I suggest you have a look at my previous post [What is Kafka?](/what-is-kafka/) before, and you can have a look at how I created the Kafka cluster [here](/raspberry-pi-kafka-cluster/).
+If you’re not familiar with Kafka, I suggest you have a look at my previous post [What is Kafka?](/old-igfasouza-blog/what-is-kafka/) before, and you can have a look at how I created the Kafka cluster [here](/old-igfasouza-blog/raspberry-pi-kafka-cluster/).
 
 ## Idea
 
@@ -38,7 +38,7 @@ clone the [code](https://github.com/AnykeyNL/oci-smashing) and change the update
 
 **Results**
 
-![](/images/wp/2021/03/OCI-kafka1.jpg)
+![](/old-igfasouza-blog/images/wp/2021/03/OCI-kafka1.jpg)
 
 Because this is a kind of Oracle Cloud solution you can use Oracle Streaming Service instead of hosting your Kafka.
 
@@ -75,7 +75,7 @@ id: group-0
 
 And you can use all solutions in the cloud.
 
-![](/images/wp/2021/03/Screenshot-2021-03-03-at-15.01.06-1024x533.png)
+![](/old-igfasouza-blog/images/wp/2021/03/Screenshot-2021-03-03-at-15.01.06-1024x533.png)
 
 The Kafka consumer and the dashboard can be hosted in a cloud VM as well.
 

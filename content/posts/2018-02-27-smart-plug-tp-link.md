@@ -11,7 +11,7 @@ description: How’s the form? A smart device is an electronic device, generally
 image: wp/2018/02/PXL_20210104_122903391.jpg
 ---
 
-![](/images/wp/2018/02/PXL_20210104_122903391-1024x768.jpg)
+![](/old-igfasouza-blog/images/wp/2018/02/PXL_20210104_122903391-1024x768.jpg)
 
 **How’s the form?**
 

@@ -13,7 +13,7 @@ description: How heya? This is another blog about Java on Raspberry Pi where I t
 image: wp/2021/08/PiJava01.jpg
 ---
 
-![](/images/wp/2021/08/PiJava01.jpg)
+![](/old-igfasouza-blog/images/wp/2021/08/PiJava01.jpg)
 
 **How heya?**
 
@@ -29,7 +29,7 @@ The goal of the Raspberry Pi project was to build an inexpensive PC that is affo
 
 At nine years old, the Raspberry Pi has become the third most popular computer of all time, recently crossing the threshold of 30 million units sold. The latest model (Raspberry Pi 4) is essentially a desktop computer, with a 1.5GHz ARM CPU, up to 4GB RAM, USB 3.0, and full Gigabit Ethernet.
 
-![](/images/wp/2021/08/HistoryPi.png)  
+![](/old-igfasouza-blog/images/wp/2021/08/HistoryPi.png)  
 Picture 1: Raspberry PI history
 
 With the small footprint and electricity usage of the Pi, it is a perfect solution for an always-on device – meaning you can turn it on, set it up and leave it running somewhere without worrying too much about your electricity bill at the end of the month. One thing to be careful of is the processing power of the Pi itself – don’t expect it to be able to do any really heavy grunt work without grinding to a halt – however, it is fairly happy with most personal projects.
@@ -38,7 +38,7 @@ There are different operating systems available for the Raspberry Pi, Raspberry 
 But it is not limited to Raspberry Pi OS, there are dozens of operating systems available on Raspberry Pi, including 64 bits options, and there is not a perfect distribution. Each distribution has its strengths and weaknesses and is more suited to a specific use.  
 PI OS and Ubuntu are probably the most popular ones.
 
-You can find not only Linux but Windows and Android OS as well. I wrote a blog with an intro to [Android Things](/rainbow-hat-and-java/), a Google IOT Android OS.
+You can find not only Linux but Windows and Android OS as well. I wrote a blog with an intro to [Android Things](/old-igfasouza-blog/rainbow-hat-and-java/), a Google IOT Android OS.
 
 When you look at the Raspberry Pi board, you’ll find 40 pins (2 rows of 20). Those are the GPIOs (General-purpose input/output). Some of those can be used as a digital input or output pin. And the number of things you can do with it is amazing!
 
@@ -46,7 +46,7 @@ When you look at the Raspberry Pi board, you’ll find 40 pins (2 rows of 20). T
 
 These GPIOs pins are even one of the main factors which made the Raspberry Pi such a success! You can indeed find a cheap second-hand laptop that includes a battery, screen, etc. but you’ll never be able to build experiments that combine soft- and hardware in such an easy way as you can do with the Raspberry Pi.
 
-![](/images/wp/2021/08/pi4j.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/08/pi4j.jpg)  
 Picture 2: PI4J logo
 
 PI4J is the most popular API to control the GPIOs using Java.
@@ -62,7 +62,7 @@ The masses of resources and community support are almost a guarantee that you wo
 In the Java world, the projects and APIs that you can use are up to infinite.  
 A list of the most popular ones.
 
-![](/images/wp/2021/08/pijavaprojects01.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/08/pijavaprojects01.jpg)  
 Picture 3: Java Projects
 
 And of course, you can install GraalVm and any other JVM languages as any OpenJDK distribution..
@@ -89,7 +89,7 @@ A list to check out.
 
 Another project to check out is [JDKMon](https://github.com/HanSolo/JDKMon).
 
-![](/images/wp/2021/08/graalvm.png)  
+![](/old-igfasouza-blog/images/wp/2021/08/graalvm.png)  
 Picture 4: Graal VM logo
 
 You can play with Java and Web as well, and you will find a lot of resources for Spring, Micronaut, Quarkus, Vert.x, Helidon, and others.
@@ -101,22 +101,22 @@ You can find a lot of tutorials and info about Raspberry Pi and [Kubernetes](htt
 The idea here is to show some ideas and projects that I created with Raspberry Pi and Java and perhaps give you some insights or ideas.
 
 – A simple Quarkus Qute example that shows a 7 segment display and control in real-time a real one with a Raspberry Pi 3 B.  
-[Link](/quarkus-qute-with-raspberry-pi/)
+[Link](/old-igfasouza-blog/quarkus-qute-with-raspberry-pi/)
 
 – A Micronaut Vecolcity interface that provides a way to control the 8×8 Led Matrix from SenseHat.  
-[Link](/micronaut-velocity-with-raspberry-pi/)
+[Link](/old-igfasouza-blog/micronaut-velocity-with-raspberry-pi/)
 
 – Using a cardboard and Duke image to create a servo demo where Duke moves his arm.  
-[Link](/raspberry-pi-servo-java-duke-robot/)
+[Link](/old-igfasouza-blog/raspberry-pi-servo-java-duke-robot/)
 
 – A simple Helidon example that shows a 14 segments display and control in real-time a real one with a Raspberry Pi 3 B.  
-[Link](/raspberry-pi-helidon-14-segment-display/)
+[Link](/old-igfasouza-blog/raspberry-pi-helidon-14-segment-display/)
 
 – An application that reads available timezones from worldtimeapi.org and displays them in an autocomplete list. When a region is selected it calls the Qurakus REST API passing the current time and Quarkus set the time value on the segment display.  
-[Link](/4x7-segment-display/)
+[Link](/old-igfasouza-blog/4x7-segment-display/)
 
 – A simple Spring Boot Thymeleaf app where it shows a form with a 128×64 table. Each table position is the representation of the LCD graphic display. I created an Array of bits with all positions of this table.  
-[Link](/spring-thymeleaf-raspberry-pi-lcd/)
+[Link](/old-igfasouza-blog/spring-thymeleaf-raspberry-pi-lcd/)
 
 Another place to check out and get some ideas and material to learn is the CoderDojo.  
 **CoderDojo** is a global volunteer-led community of free programming workshops for young people between 7 and 17. The movement is a grassroots organization with individual clubs acting independently.
@@ -125,9 +125,9 @@ I did a talk on **Raspberry Pi from Java to Data Streaming**, where I talked abo
 
 In this blog, I try to cover the Raspberry Pi and Java parts, and the Data Streaming is already covered in those three blogs
 
-[Kafka at the edge](/kafka-at-the-edge-with-raspberry-pi/)  
-[Learn Kafka and event streams with fun](/learn-kafka-and-event-streams-with-fun/)  
-[Kafka weather station](/kafka-weather-station/)
+[Kafka at the edge](/old-igfasouza-blog/kafka-at-the-edge-with-raspberry-pi/)  
+[Learn Kafka and event streams with fun](/old-igfasouza-blog/learn-kafka-and-event-streams-with-fun/)  
+[Kafka weather station](/old-igfasouza-blog/kafka-weather-station/)
 
 Youtube – Raspberry Pi from Java to Data Streaming
 

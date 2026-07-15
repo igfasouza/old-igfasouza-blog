@@ -15,7 +15,7 @@ description: What’s up? This post is to show how I created a Java Duke Servo d
 image: wp/2020/10/duke.jpg
 ---
 
-![](/images/wp/2020/10/duke-raspberry.jpg)
+![](/old-igfasouza-blog/images/wp/2020/10/duke-raspberry.jpg)
 
 **What’s up?**
 
@@ -35,7 +35,7 @@ Because today we celebrate children’s day in Brazil, I came with the idea to s
 
 Using a cardboard and Duke image to create a servo demo where Duke moves his arm.
 
-![](/images/wp/2020/10/duke.jpg)  
+![](/old-igfasouza-blog/images/wp/2020/10/duke.jpg)  
 I used this image to create my demo.
 
 ## Control a Servo Motor
@@ -51,7 +51,7 @@ When the pulse width of the PWM Signal is 1ms, the position of the servo is the 
 
 Similarly, for pulse widths of 1.5ms and 2ms, the position of the servo is middle (with a duty cycle of 7.5%) and far right (with a duty cycle of 10%).
 
-![](/images/wp/2020/10/Untitled-drawing.jpg)
+![](/old-igfasouza-blog/images/wp/2020/10/Untitled-drawing.jpg)
 
 - so for 50hz, one frequency is 20ms
 - duty cycle for 0 degree = (1/20)\*100 = 5%
@@ -68,9 +68,9 @@ The Tower Pro SG90 Servo Motor Consists of three Pins: PWM (Orange or Yellow), V
 
 PWM or Signal Pin of the Servo Motor must be connected to the PWM Output of the Controller (Raspberry Pi). Based on the width of the Pulses from the PWM signal, the angle of the Servo Motor’s shaft will vary.
 
-![](/images/wp/2020/10/schematics_pi.png)
+![](/old-igfasouza-blog/images/wp/2020/10/schematics_pi.png)
 
-![](/images/wp/2020/10/schematics.png)
+![](/old-igfasouza-blog/images/wp/2020/10/schematics.png)
 
 1ms pulse for 0 degree (LEFT)  
 1.5ms pulse for 90 degree (MIDDLE)  
@@ -150,7 +150,7 @@ except KeyboardInterrupt:
 
 And of course, you can do this demo with an Arduino as well.
 
-![](/images/wp/2020/10/ff8581a2-ea36-49d4-b773-13b249ddf03f_0mIWhxt1nh.png)
+![](/old-igfasouza-blog/images/wp/2020/10/ff8581a2-ea36-49d4-b773-13b249ddf03f_0mIWhxt1nh.png)
 
 ```
 #include <Servo.h>

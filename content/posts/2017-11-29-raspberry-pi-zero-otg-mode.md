@@ -11,7 +11,7 @@ description: Story Horse? The Raspberry Pi Zero support USB On The Go, given the
 image: wp/2017/11/otg.jpg
 ---
 
-![](/images/wp/2017/11/otg.jpg)
+![](/old-igfasouza-blog/images/wp/2017/11/otg.jpg)
 
 **Story Horse?**
 

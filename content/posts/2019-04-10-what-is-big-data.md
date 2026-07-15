@@ -11,7 +11,7 @@ description: What’s the story Rory? Table of contents What exactly is Big Data
 image: wp/2019/04/bigData.jpg
 ---
 
-![](/images/wp/2019/04/bigData-1024x497.jpg)
+![](/old-igfasouza-blog/images/wp/2019/04/bigData-1024x497.jpg)
 
 ### What’s the story Rory?
 
@@ -48,7 +48,7 @@ When I typed ‘Big Data’ at that time, this showed up:
 One popular interpretation of big data refers to extremely large data sets but I particularly prefer the 3 Vs definition: (volume, variety and velocity)  
 Doug Laney from Gartner who was credited with the 3 ‘V’s of Big Data. Gartner’s Big Data is ‘high-volume, high-velocity and/or high-variety information assets that demand cost-effective, innovative forms of information processing that enable enhanced insight, decision making, and process automation.’ Gartner is referring to the size of data (large volume), speed with which the data is being generated (velocity), and the different types of data (variety)
 
-![](/images/wp/2019/04/The-3-Vs-of-Big-Data.png)
+![](/old-igfasouza-blog/images/wp/2019/04/The-3-Vs-of-Big-Data.png)
 
 Mike Gualtieri of Forrester said that the 3 ‘V’s mentioned by Gartner are just measures of data and Mike insisted that Forrester’s definition is more actionable. And that definition is: ‘Big Data is the frontier of a firm’s ability to store, process, and access (SPA) all the data it needs to operate effectively, make decisions, reduce risks, and serve customers. Forrester seems to be saying that any data that is beyond the current reach (i.e. frontier) of that firm to store (i.e. large volumes of data), process (i.e. needs innovative processing), and access (new ways of accessing that data) is the Big Data. So the question is: What is the ‘frontier’? Who defines the frontier?  
 I kept searching for those answers. I looked at McKinsey’s definition: “Datasets whose size is beyond the ability of typical database software tools to capture, store, manage, and analyze.” Well, similar to all the above but still not specific for me to decide when the data becomes Big Data.  

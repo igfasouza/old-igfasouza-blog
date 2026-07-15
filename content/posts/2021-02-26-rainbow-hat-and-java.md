@@ -12,7 +12,7 @@ description: How’s it going there? 2021/02/26 The Rainbow HAT is an add-on boa
 image: wp/2021/02/PXL_20210224_202642207.jpg
 ---
 
-![](/images/wp/2021/02/PXL_20210224_202642207-1024x768.jpg)
+![](/old-igfasouza-blog/images/wp/2021/02/PXL_20210224_202642207-1024x768.jpg)
 
 **How’s it going there?**  
 2021/02/26
@@ -22,7 +22,7 @@ After Google announced Android Things Pimoroni designed the all-singing, all-dan
 
 Rainbow HAT is designed to stimulate ideas – a development platform that can be used to build new and exciting IoT hardware and software. It’s also meant to be fun to use, and that should be apparent just by looking at it – the playful rainbow formed from the seven APA102 LEDs and the barometer type markings below it.
 
-![](/images/wp/2021/02/android-things-starter-kit-1-1024x681.jpg)
+![](/old-igfasouza-blog/images/wp/2021/02/android-things-starter-kit-1-1024x681.jpg)
 
 **Technical Specification:**
 
@@ -56,13 +56,13 @@ You can find the driver and samples published in the official [GitHub organizati
 
 With Raspbian you can check the Python library [here](https://github.com/pimoroni/rainbow-hat).
 
-The Rainbow HAT uses the same 14 segments display that I showed in the [Helidon demo](/raspberry-pi-helidon-14-segment-display/).
+The Rainbow HAT uses the same 14 segments display that I showed in the [Helidon demo](/old-igfasouza-blog/raspberry-pi-helidon-14-segment-display/).
 
 **HT16K33 driver**
 
 The HT16K33 is a memory mapping and multi-function LED controller driver. The max. Display segment numbers in the device is 128 patterns (16 segments and 8 commons) with a 13\*3 (MAX.) matrix key scan circuit. The software configuration features of the HT16K33 make it suitable for multiple LED applications including LED modules and display subsystems.
 
-![](/images/wp/2021/02/rainbowhat01-1024x512.png)
+![](/old-igfasouza-blog/images/wp/2021/02/rainbowhat01-1024x512.png)
 
 I created a Java API to control the Rainbow Hat 14 segments display, using the HT16K33 driver.
 
@@ -71,7 +71,7 @@ I follow the idea of the [Android thing](https://github.com/androidthings/contri
 
 This time I decided to do an example with Javalin.
 
-![](/images/wp/2021/02/javalin.png)
+![](/old-igfasouza-blog/images/wp/2021/02/javalin.png)
 
 Javalin is a very lightweight web framework for Java 8 (and later) and Kotlin. It supports modern features such as HTTP/2, WebSocket, and asynchronous requests. Javalin is servlet-based, and its main goals are simplicity, a great developer experience, and first-class interoperability between Java and Kotlin. Javalin is built on top of Jetty, and its performance is equivalent to raw Jetty code.
 
@@ -79,7 +79,7 @@ Javalin is a very lightweight web framework for Java 8 (and later) and Kotlin. I
 
 A simple Javalin example that shows a 14 segments display and control in real-time using my Java API Rainbow Hat 14 segments display. A 14 segments display – 5421AG with HT16K33 Driver
 
-![](/images/wp/2021/02/result01.jpg)
+![](/old-igfasouza-blog/images/wp/2021/02/result01.jpg)
 
 ## Code
 
@@ -102,7 +102,7 @@ You can get the full code on my [GitHub](https://github.com/igfasouza/javalin-Ra
 
 Another cool thing about this idea is that some other Hats use the HT16K33 driver as well, and this means that we can reuse this code just by changing the GPIO numbers. For example the Four Letter pHat.
 
-![](/images/wp/2021/02/four_letter_phat.jpg)
+![](/old-igfasouza-blog/images/wp/2021/02/four_letter_phat.jpg)
 
 ## Links
 

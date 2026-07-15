@@ -12,7 +12,7 @@ description: 'What’s the craic? In this blog, I want to set up a base use case
 image: wp/2021/04/raspberry_kafka.png
 ---
 
-![](/images/wp/2021/04/Kafka_weatherstation.jpg)
+![](/old-igfasouza-blog/images/wp/2021/04/Kafka_weatherstation.jpg)
 
 **What’s the craic?**
 
@@ -20,15 +20,15 @@ In this blog, I want to set up a base use case that I can explore in future blog
 
 I can explore not only Kafka, local, or cloud, but I can explore some frameworks, program languages, some tools for visualization, and of course I can add some hardware.
 
-![](/images/wp/2021/04/PXL_20210408_093153928-1-scaled.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/04/PXL_20210408_093153928-1-scaled.jpg)  
 Picture 1: Hats that I can use to generate some data
 
-![](/images/wp/2021/04/Pi_hats_visualization.jpg)  
+![](/old-igfasouza-blog/images/wp/2021/04/Pi_hats_visualization.jpg)  
 Picture2: Hats that I can use for visualization
 
 I created a [GitHub](https://github.com/igfasouza/Kafka-weather-station) where I will add all links and codes for my blogs related to this idea.
 
-![](/images/wp/2021/04/raspberry_kafka-1024x476.png)  
+![](/old-igfasouza-blog/images/wp/2021/04/raspberry_kafka-1024x476.png)  
 Picture3: Use Case
 
 ## Use Case
