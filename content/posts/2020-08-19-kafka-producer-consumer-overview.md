@@ -71,7 +71,7 @@ There is no simple guideline for setting linger.ms values; you should test setti
 
 |  |  |
 | --- | --- |
-| 1 2 3 4 5 | <dependency>      <groupId>org.apache.kafka</groupId>      <artifactId>kafka-clients</artifactId>      <version>${kafka.version}</version>  </dependency> |
+| 1 2 3 4 5 | <dependency>      <groupId>org.apache.kafka</groupId>      <artifactId>kafka-clients</artifactId>      <version>$\{kafka.version}</version>  </dependency> |
 
 [Java Doc](https://kafka.apache.org/090/javadoc/index.html?org/apache/kafka/clients/producer/KafkaProducer.html)
 
