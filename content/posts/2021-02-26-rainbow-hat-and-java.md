@@ -83,9 +83,18 @@ A simple Javalin example that shows a 14 segments display and control in real-ti
 
 ## Code
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 | public static void main([String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string)[] args) {  try {  AlphanumericDisplay segment = new AlphanumericDisplay("I2C1");  segment.setBrightness(Ht16k33.HT16K33\_BRIGHTNESS\_MAX);  segment.display("Igor");  segment.setEnabled(true);  } catch ([IOException](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+ioexception) | UnsupportedBusNumberException e) {  e.printStackTrace();  }  } |
+```java
+public static void main(String[] args) {
+try {
+AlphanumericDisplay segment = new AlphanumericDisplay("I2C1");
+segment.setBrightness(Ht16k33.HT16K33_BRIGHTNESS_MAX);
+segment.display("Igor");
+segment.setEnabled(true);
+} catch (IOException | UnsupportedBusNumberException e) {
+e.printStackTrace();
+}
+}
+```
 
 Disclaimer – I got the CSS and JS [here](http://www.3quarks.com/en/SegmentDisplay/).
 

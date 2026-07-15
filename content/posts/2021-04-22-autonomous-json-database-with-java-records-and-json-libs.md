@@ -26,9 +26,10 @@ Recently Oracle [announced the Free AJD](https://blogs.oracle.com/developers/ora
 
 Everything started here, when I saw [this documentation](https://docs.oracle.com/en/database/oracle/simple-oracle-document-access/java/adsda/using-soda-java.html#GUID-EF1551B4-A06A-42CB-B472-D692AF1D9CDC) to get started and I saw that to create a new document you should send a string.
 
-|  |  |
-| --- | --- |
-| 1 2 | // Create a JSON document.  OracleDocument doc = db.createDocumentFromString("{ "name" : "Alexander" }"); |
+```
+// Create a JSON document.
+OracleDocument doc = db.createDocumentFromString("{ "name" : "Alexander" }");
+```
 
 Then I was thinking what is the best way to Serialize and Deserialize an Object to JSON and if it is possible to use Java Records?
 
@@ -57,9 +58,14 @@ Before the release of JSON-B (which arrived as part of Java EE 8), JSON-P was Ja
 
 [Eclipse Yasson](https://eclipse-ee4j.github.io/yasson/) is the reference implementation
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 | <dependency>      <groupId>org.eclipse</groupId>      <artifactId>yasson</artifactId>      <version>1.0.6</version>      <scope>test</scope>  </dependency> |
+```xml
+<dependency>
+    <groupId>org.eclipse</groupId>
+    <artifactId>yasson</artifactId>
+    <version>1.0.6</version>
+    <scope>test</scope>
+</dependency>
+```
 
 I just add the maven dependency and I had to add the ***@JsonbCreator*** annotation on the Location constructor
 
@@ -73,35 +79,51 @@ There are other implementations as well;
 
 **For Jackson**
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 | <dependency>      <groupId>com.fasterxml.jackson.core</groupId>      <artifactId>jackson-databind</artifactId>      <version>2.12.0</version>  </dependency> |
+```xml
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.12.0</version>
+</dependency>
+```
 
 I just add
 
-|  |  |
-| --- | --- |
-| 1 2 | final ObjectMapper mapper = new ObjectMapper()        .enable(SerializationFeature.INDENT\_OUTPUT); |
+```
+final ObjectMapper mapper = new ObjectMapper()
+      .enable(SerializationFeature.INDENT_OUTPUT);
+```
 
 **For Gson**
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 | <dependency>         <groupId>com.google.code.gson</groupId>         <artifactId>gson</artifactId>         <version>2.3.1</version>     </dependency> |
+```xml
+<dependency>
+       <groupId>com.google.code.gson</groupId>
+       <artifactId>gson</artifactId>
+       <version>2.3.1</version>
+   </dependency>
+```
 
 I just override the to String method.
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 | @Override  public [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) toString() {  Gson gson = new Gson();             return gson.toJson(this);  } |
+```java
+@Override
+public String toString() {
+Gson gson = new Gson();
+       return gson.toJson(this);
+}
+```
 
 You can check and get the code in my [GitHub](https://github.com/igfasouza/Oracle_AJD_java14).
 
 The main point in the code is that these lines give the same result.
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 | OracleDocument doc = db.createDocumentFromString(la.toString());  OracleDocument doc = db.createDocumentFromString(laAPI.toString());  OracleDocument doc = db.createDocumentFromString(laJackson.toString());  OracleDocument doc = db.createDocumentFromString(jsonb.toString()); |
+```
+OracleDocument doc = db.createDocumentFromString(la.toString());
+OracleDocument doc = db.createDocumentFromString(laAPI.toString());
+OracleDocument doc = db.createDocumentFromString(laJackson.toString());
+OracleDocument doc = db.createDocumentFromString(jsonb.toString());
+```
 
 I also added a test where I compare the objects and the JSON to validate that they are equal.
 
@@ -112,15 +134,22 @@ I saw that [Quarkus](https://quarkus.io/blog/quarkus-1-13-2-final-released/) rel
 
 I don’t have implementation details of this extension and I didn’t have time to test, but on Quarkus you can choose between JSON-B or Jackson and as I demonstrated in my test it will work and will generate the same result. (let me know in the comments if you did any tests and if there is a difference?)
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 | <dependency>      <groupId>io.quarkus</groupId>      <artifactId>quarkus-resteasy-jackson</artifactId>  </dependency>  <dependency>      <groupId>io.quarkus</groupId>      <artifactId>quarkus-resteasy-jsonb</artifactId>  </dependency> |
+```xml
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-resteasy-jackson</artifactId>
+</dependency>
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-resteasy-jsonb</artifactId>
+</dependency>
+```
 
 If you getting confused and not knowing which implementation you are using you can find out which implementation is used, it is sufficient to inspect the package name of the following class:
 
-|  |  |
-| --- | --- |
-| 1 | JsonbBuilder.create().getClass() |
+```
+JsonbBuilder.create().getClass()
+```
 
 ## Conclusions
 

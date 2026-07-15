@@ -69,17 +69,47 @@ There is no simple guideline for setting linger.ms values; you should test setti
 
 **Code**
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 | <dependency>      <groupId>org.apache.kafka</groupId>      <artifactId>kafka-clients</artifactId>      <version>$\{kafka.version}</version>  </dependency> |
+```xml
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-clients</artifactId>
+    <version>${kafka.version}</version>
+</dependency>
+```
 
 [Java Doc](https://kafka.apache.org/090/javadoc/index.html?org/apache/kafka/clients/producer/KafkaProducer.html)
 
 **Simple Java Code**
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 | package com.codingharbour.kafka.producer;    import org.apache.kafka.clients.producer.KafkaProducer;  import org.apache.kafka.clients.producer.Producer;  import org.apache.kafka.clients.producer.ProducerConfig;  import org.apache.kafka.clients.producer.ProducerRecord;  import org.apache.kafka.common.serialization.StringSerializer;    import java.time.Instant;  import java.util.Properties;    public class SimpleKafkaProducer {        public static void main([String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string)[] args) {          //create kafka producer          [Properties](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+properties) properties = new [Properties](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+properties)();          properties.put(ProducerConfig.BOOTSTRAP\_SERVERS\_CONFIG, "localhost:9092");          properties.put(ProducerConfig.KEY\_SERIALIZER\_CLASS\_CONFIG, StringSerializer.class);          properties.put(ProducerConfig.VALUE\_SERIALIZER\_CLASS\_CONFIG, StringSerializer.class);            Producer<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string), String> producer = new KafkaProducer<>(properties);            //prepare the record          [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) recordValue = "Current time is " + Instant.now().toString();          [System](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+system).out.println("Sending message: " + recordValue);          ProducerRecord<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string), String> record = new ProducerRecord<>("java\_topic", null, recordValue);            //produce the record          producer.send(record);          producer.flush();            //close the producer at the end          producer.close();      }  } |
+```java
+package com.codingharbour.kafka.producer;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.Producer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.StringSerializer;
+import java.time.Instant;
+import java.util.Properties;
+public class SimpleKafkaProducer {
+    public static void main(String[] args) {
+        //create kafka producer
+        Properties properties = new Properties();
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        Producer<String, String> producer = new KafkaProducer<>(properties);
+        //prepare the record
+        String recordValue = "Current time is " + Instant.now().toString();
+        System.out.println("Sending message: " + recordValue);
+        ProducerRecord<String, String> record = new ProducerRecord<>("java_topic", null, recordValue);
+        //produce the record
+        producer.send(record);
+        producer.flush();
+        //close the producer at the end
+        producer.close();
+    }
+}
+```
 
 ![](/images/wp/2020/08/producer01.png)  
 High-level overview of Kafka producer components – Kafka the Definitive Guide Book
@@ -116,9 +146,41 @@ Consumer groups provide the following advantages:
 
 **Simple Java Code**
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 | package com.codingharbour.kafka.consumer;    import org.apache.kafka.clients.consumer.Consumer;  import org.apache.kafka.clients.consumer.ConsumerConfig;  import org.apache.kafka.clients.consumer.ConsumerRecord;  import org.apache.kafka.clients.consumer.ConsumerRecords;  import org.apache.kafka.clients.consumer.KafkaConsumer;  import org.apache.kafka.common.serialization.StringDeserializer;    import java.time.Duration;  import java.util.Collections;  import java.util.Properties;    public class SimpleKafkaConsumer {        public static void main([String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string)[] args) {          //create kafka consumer          [Properties](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+properties) properties = new [Properties](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+properties)();          properties.put(ConsumerConfig.BOOTSTRAP\_SERVERS\_CONFIG, "localhost:9092");          properties.put(ConsumerConfig.GROUP\_ID\_CONFIG, "my-first-consumer-group");            properties.put(ConsumerConfig.KEY\_DESERIALIZER\_CLASS\_CONFIG, StringDeserializer.class);          properties.put(ConsumerConfig.VALUE\_DESERIALIZER\_CLASS\_CONFIG, StringDeserializer.class);            properties.put(ConsumerConfig.AUTO\_OFFSET\_RESET\_CONFIG, "earliest");            properties.put(ConsumerConfig.ENABLE\_AUTO\_COMMIT\_CONFIG, false);            Consumer<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string), String> consumer = new KafkaConsumer<>(properties);            //subscribe to topic          consumer.subscribe([Collections](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+collections).singleton("java\_topic"));            //poll the record from the topic          while (true) {              ConsumerRecords<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string), String> records = consumer.poll(Duration.ofMillis(100));                for (ConsumerRecord<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string), String> record : records) {                  [System](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+system).out.println("Message received: " + record.value());              }              consumer.commitAsync();          }      }  } |
+```java
+package com.codingharbour.kafka.consumer;
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+import java.time.Duration;
+import java.util.Collections;
+import java.util.Properties;
+public class SimpleKafkaConsumer {
+    public static void main(String[] args) {
+        //create kafka consumer
+        Properties properties = new Properties();
+        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG, "my-first-consumer-group");
+        properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+        properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+        properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false);
+        Consumer<String, String> consumer = new KafkaConsumer<>(properties);
+        //subscribe to topic
+        consumer.subscribe(Collections.singleton("java_topic"));
+        //poll the record from the topic
+        while (true) {
+            ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+            for (ConsumerRecord<String, String> record : records) {
+                System.out.println("Message received: " + record.value());
+            }
+            consumer.commitAsync();
+        }
+    }
+}
+```
 
 ## 3. Links
 

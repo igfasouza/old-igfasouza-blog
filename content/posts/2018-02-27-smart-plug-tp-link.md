@@ -36,24 +36,39 @@ Python
 
 Example-1:
 
-|  |  |
-| --- | --- |
-| 1 2 3 | from pyHS100 import Discover  for dev in Discover.discover().values():  print(dev) |
+```python
+from pyHS100 import Discover
+for dev in Discover.discover().values():
+print(dev)
+```
 
 Example-2:
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 | from pyHS100 import SmartPlug, SmartBulb  from pprint import pformat as pf    plug = SmartPlug("192.168.XXX.XXX")  print("Current consumption: %s" % plug.get\_emeter\_realtime()) |
+```python
+from pyHS100 import SmartPlug, SmartBulb
+from pprint import pformat as pf
+plug = SmartPlug("192.168.XXX.XXX")
+print("Current consumption: %s" % plug.get_emeter_realtime())
+```
 
 Node-js  
 <https://github.com/plasticrake/tplink-smarthome-api>
 
 Example:
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 | const { Client } = require('tplink-smarthome-api');    const client = new Client();  const plug = client.getDevice({host: '192.168.XXX.XXX'}).then((device)=&gt;{  device.getSysInfo().then(console.log);  device.setPowerState(true);  });    // Look for devices, log to console, and turn them on  client.startDiscovery().on('device-new', (device) =&gt; {  device.getSysInfo().then(console.log);  device.setPowerState(true);  }); |
+```
+const { Client } = require('tplink-smarthome-api');
+const client = new Client();
+const plug = client.getDevice({host: '192.168.XXX.XXX'}).then((device)=&gt;{
+device.getSysInfo().then(console.log);
+device.setPowerState(true);
+});
+// Look for devices, log to console, and turn them on
+client.startDiscovery().on('device-new', (device) =&gt; {
+device.getSysInfo().then(console.log);
+device.setPowerState(true);
+});
+```
 
 I manage to turn on or turn off my smart plug from a Tweet.  
 https://www.instagram.com/p/BZEimj0guBH/?taken-by=igfasouza

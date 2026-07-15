@@ -62,9 +62,29 @@ The way that you get each digit displaying something different is to switch them
 
 ## Code
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 | package quarkus47segments.igor;  ...    @Path("/clock")  public class Main {        final GpioController gpio = GpioFactory.getInstance();      GpioPinDigitalOutput pin01 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO\_08, "1", PinState.LOW);  ...        @GET      @Path("/\{name}")      public [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) greeting(@PathParam("name") [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) name) throws [InterruptedException](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+interruptedexception) {          [System](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+system).out.println("Time " + name);          setClockValue(name);          return "hello " + name;      }        public void setClockValue([String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) value) throws [InterruptedException](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+interruptedexception) {      ...      }        public void display(int number) {      ...      }    } |
+```java
+package quarkus47segments.igor;
+...
+@Path("/clock")
+public class Main {
+final GpioController gpio = GpioFactory.getInstance();
+    GpioPinDigitalOutput pin01 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_08, "1", PinState.LOW);
+...
+    @GET
+    @Path("/{name}")
+    public String greeting(@PathParam("name") String name) throws InterruptedException {
+        System.out.println("Time " + name);
+        setClockValue(name);
+        return "hello " + name;
+    }
+    public void setClockValue(String value) throws InterruptedException {
+    ...
+    }
+    public void display(int number) {
+    ...
+    }
+}
+```
 
 The code itself is pretty ugly. I could make it into a library so that everything looks nice and clean. But bla bla bla …
 

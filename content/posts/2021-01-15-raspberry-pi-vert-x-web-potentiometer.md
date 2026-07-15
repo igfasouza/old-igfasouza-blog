@@ -69,9 +69,25 @@ I can do a simple Led example.
 
 I just used the Vert.X web start hello world example.
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 | private void changePwmValue(RoutingContext routingContext) {          [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) range = routingContext.pathParam("id");                    [System](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+system).out.println(range); //just to see calls                    final GpioController gpio = GpioFactory.getInstance();          Gpio.pwmSetMode(Gpio.PWM\_MODE\_MS);          Gpio.pwmSetRange(100);          Gpio.pwmSetClock(500);                    GpioPinPwmOutput led01 = gpio.provisionSoftPwmOutputPin(RaspiPin.GPIO\_15, "LeftGreen");          led01.setPwm([Integer](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+integer).parseInt(range));            routingContext.response()                  .putHeader("content-type", "application/json")                  .setStatusCode(200)                  .end(Json.encodePrettily(range));      } |
+```java
+private void changePwmValue(RoutingContext routingContext) {
+        String range = routingContext.pathParam("id");
+
+        System.out.println(range); //just to see calls
+
+        final GpioController gpio = GpioFactory.getInstance();
+        Gpio.pwmSetMode(Gpio.PWM_MODE_MS);
+        Gpio.pwmSetRange(100);
+        Gpio.pwmSetClock(500);
+
+        GpioPinPwmOutput led01 = gpio.provisionSoftPwmOutputPin(RaspiPin.GPIO_15, "LeftGreen");
+        led01.setPwm(Integer.parseInt(range));
+        routingContext.response()
+                .putHeader("content-type", "application/json")
+                .setStatusCode(200)
+                .end(Json.encodePrettily(range));
+    }
+```
 
 Disclaimer – I got the CSS from [here](https://codepen.io/jean-emmanuel/pen/GpxYdg)
 

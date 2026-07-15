@@ -31,17 +31,27 @@ I’m using a smart plug HS110 and smart bulb LB110
 
 ## code
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 | @RequestMapping(  value = "/process",  method = RequestMethod.POST,  consumes = "text/plain")  public void process(@RequestBody [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) payload) throws [Exception](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+exception) { |
+```java
+@RequestMapping(
+value = "/process",
+method = RequestMethod.POST,
+consumes = "text/plain")
+public void process(@RequestBody String payload) throws Exception {
+```
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 | [System](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+system).out.println(payload);    if(payload.equals("true")){  plug.switchOn();  this.producer.sendMessage(plug.getEnergy());  }else {  plug.switchOff();  } |
+```java
+System.out.println(payload);
+if(payload.equals("true")){
+plug.switchOn();
+this.producer.sendMessage(plug.getEnergy());
+}else {
+plug.switchOff();
+}
+```
 
-|  |  |
-| --- | --- |
-| 1 | } |
+```
+}
+```
 
 For configure kafka just need add the settings on “application.yml”. Here I did with my [raspberry pi kafka cluster](/raspberry-pi-kafka-cluster/).
 

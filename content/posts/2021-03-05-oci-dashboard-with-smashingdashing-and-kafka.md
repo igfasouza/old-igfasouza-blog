@@ -48,9 +48,30 @@ You can check my [GitHub](https://github.com/igfasouza/OSS_examples) with some O
 
 You just need to change the “application.yml” file from my Micronaut sense hat idea.
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 | kafka:  bootstrap:  servers: streaming.{your-region}.oci.oraclecloud.com:9092  security:  protocol: SASL\_SSL  sasl:  mechanism: PLAIN  key:  serializer: org.apache.kafka.common.serialization.StringSerializer  deserializer: org.apache.kafka.common.serialization.StringDeserializer  value:  serializer: org.apache.kafka.common.serialization.StringSerializer  deserializer: org.apache.kafka.common.serialization.StringDeserializer  retries: 5  max:  request:  size: 1048576  partition:  fetch:  bytes: 1048576  group:  id: group-0 |
+```
+kafka:
+bootstrap:
+servers: streaming.{your-region}.oci.oraclecloud.com:9092
+security:
+protocol: SASL_SSL
+sasl:
+mechanism: PLAIN
+key:
+serializer: org.apache.kafka.common.serialization.StringSerializer
+deserializer: org.apache.kafka.common.serialization.StringDeserializer
+value:
+serializer: org.apache.kafka.common.serialization.StringSerializer
+deserializer: org.apache.kafka.common.serialization.StringDeserializer
+retries: 5
+max:
+request:
+size: 1048576
+partition:
+fetch:
+bytes: 1048576
+group:
+id: group-0
+```
 
 And you can use all solutions in the cloud.
 

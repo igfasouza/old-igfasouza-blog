@@ -62,17 +62,27 @@ PIN16 -> GPIO 25
 
 ## Code
 
-|  |  |
-| --- | --- |
-| 1 2 | static Routing createRouting() {  List<class<? extends="" encoder="">&gt; encoders = [Collections](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+collections).singletonList(UppercaseEncoder.class);</class<?> |
+```
+static Routing createRouting() {
+List<class<? extends="" encoder="">&gt; encoders = Collections.singletonList(UppercaseEncoder.class);</class<?>
+```
 
-|  |  |
-| --- | --- |
-| 1 |  |
+```
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 | return Routing.builder()  .register("/rest", component)  .register("/websocket",  TyrusSupport.builder().register(  ServerEndpointConfig.Builder.create(MessageBoardEndpoint.class, "/board")  .encoders(encoders).build())  .build())  .register("/web", StaticContentSupport.builder("/WEB").build())  .build();  } |
+```
+
+```
+return Routing.builder()
+.register("/rest", component)
+.register("/websocket",
+TyrusSupport.builder().register(
+ServerEndpointConfig.Builder.create(MessageBoardEndpoint.class, "/board")
+.encoders(encoders).build())
+.build())
+.register("/web", StaticContentSupport.builder("/WEB").build())
+.build();
+}
+```
 
 Disclaimer – I use the same CSS that I used in my [Quarkus Qute example](/quarkus-qute-with-raspberry-pi/) and I started this demo using this [WebSocket sample](https://github.com/oracle/helidon/tree/master/examples/webserver/websocket)
 

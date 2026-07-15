@@ -47,21 +47,67 @@ Option 2: Java class with @Configuration
 
 I’m using option 2 in this example.
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 | @EnableKafka  @Configuration  public class KafkaConsumerConfig {        @Value("$\{kafka.bootstrapserver}")      public [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) bootstrapServer;        @Bean      public Map<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string),Object> consumerConfigs(){          Map<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string),Object> props=new HashMap<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string),Object>();          props.put(ConsumerConfig.BOOTSTRAP\_SERVERS\_CONFIG, bootstrapServer);          props.put(ConsumerConfig.KEY\_DESERIALIZER\_CLASS\_CONFIG, StringDeserializer.class);          props.put(ConsumerConfig.VALUE\_DESERIALIZER\_CLASS\_CONFIG, StringDeserializer.class);          props.put(ConsumerConfig.GROUP\_ID\_CONFIG, "temp-groupid.group");          props.put(ConsumerConfig.AUTO\_OFFSET\_RESET\_CONFIG, "latest");            return props;      }        @Bean      public ConsumerFactory<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string), String> consumerFactory(){          return new DefaultKafkaConsumerFactory<>(consumerConfigs());      }        @Bean      public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string),String>> kafkaListenerContainerFactory(){          ConcurrentKafkaListenerContainerFactory<[String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string), String> factory=new ConcurrentKafkaListenerContainerFactory();          factory.setConsumerFactory(consumerFactory());          return factory;        }  } |
+```java
+@EnableKafka
+@Configuration
+public class KafkaConsumerConfig {
+    @Value("${kafka.bootstrapserver}")
+    public String bootstrapServer;
+    @Bean
+    public Map<String,Object> consumerConfigs(){
+        Map<String,Object> props=new HashMap<String,Object>();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServer);
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "temp-groupid.group");
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest");
+        return props;
+    }
+    @Bean
+    public ConsumerFactory<String, String> consumerFactory(){
+        return new DefaultKafkaConsumerFactory<>(consumerConfigs());
+    }
+    @Bean
+    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String,String>> kafkaListenerContainerFactory(){
+        ConcurrentKafkaListenerContainerFactory<String, String> factory=new ConcurrentKafkaListenerContainerFactory();
+        factory.setConsumerFactory(consumerFactory());
+        return factory;
+    }
+}
+```
 
 The idea is to use this just to consume, but I added a REST interface for producing a message and a @PostConstruct method in the service to produce Sense Hat data, to be able to test if I don’t have the Sense Hat producer.
 
 I’m using this [Java Wrapper for Raspberry Pi Sense Hat](https://github.com/cinci/rpi-sense-hat-java)
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 | <dependency>              <groupId>sensehat</groupId>              <artifactId>sensehat</artifactId>              <version>1.0.0</version>              <scope>system</scope>              <systemPath>$\{basedir}/lib/java-executor-1.0-SNAPSHOT.jar</systemPath>          </dependency> |
+```xml
+<dependency>
+            <groupId>sensehat</groupId>
+            <artifactId>sensehat</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/java-executor-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
+```
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 | @PostConstruct      public void init() {          if (senseHat.equals("true")) {              SenseHat senseHat = new SenseHat();              new [Thread](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+thread)(() -> {                  while (true) {                      sendMessage([Float](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+float).toString(senseHat.environmentalSensor.getTemperature()));                      try {                          [Thread](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+thread).sleep(5000);                      } catch ([InterruptedException](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+interruptedexception) e) {                          e.printStackTrace();                      }                  }              }).start();          }      } |
+```java
+@PostConstruct
+    public void init() {
+        if (senseHat.equals("true")) {
+            SenseHat senseHat = new SenseHat();
+            new Thread(() -> {
+                while (true) {
+                    sendMessage(Float.toString(senseHat.environmentalSensor.getTemperature()));
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
+        }
+    }
+```
 
 And I have *kafka.sensehat=true* properties to enable or disable the Sense Hat producer
 
@@ -72,17 +118,17 @@ Picture 4: The end result
 
 ## Kafka
 
-|  |  |
-| --- | --- |
-| 1 | ./bin/zookeeper-server-start.sh ./config/zookeeper.properties |
+```
+./bin/zookeeper-server-start.sh ./config/zookeeper.properties
+```
 
-|  |  |
-| --- | --- |
-| 1 | ./bin/kafka-server-start.sh ./config/server.properties |
+```
+./bin/kafka-server-start.sh ./config/server.properties
+```
 
-|  |  |
-| --- | --- |
-| 1 | ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic temperature |
+```
+./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic temperature
+```
 
 ## Links
 

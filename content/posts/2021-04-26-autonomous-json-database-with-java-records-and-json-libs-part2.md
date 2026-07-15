@@ -38,21 +38,61 @@ From the previous example, I just add a new Class Autonomous2 using the new meth
 
 First I updated the yasson version from 1.0.6 to 1.0.8 and with that, I got rid of some [WARNING](https://github.com/quarkusio/quarkus/issues/10803)
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 | <dependency>      <groupId>org.eclipse</groupId>      <artifactId>yasson</artifactId>      <version>1.0.8</version>      <scope>test</scope>  </dependency> |
+```xml
+<dependency>
+    <groupId>org.eclipse</groupId>
+    <artifactId>yasson</artifactId>
+    <version>1.0.8</version>
+    <scope>test</scope>
+</dependency>
+```
 
 For **JSON-B** I changed the attribute’s names to add get in front.
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 | @JsonProperty("post code") [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) getPostCode,      @JsonProperty("country") [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) getCountry,      @JsonProperty("country abbreviation") [String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string) getCountryAbbreviation,      @JsonProperty("places") List<Places> getPlaces) { |
+```
+@JsonProperty("post code") String getPostCode,
+    @JsonProperty("country") String getCountry,
+    @JsonProperty("country abbreviation") String getCountryAbbreviation,
+    @JsonProperty("places") List<Places> getPlaces) {
+```
 
 For **Jackson**, I ended up with an ugly switch/case method that I didn’t find a better way to populate the “gen” object.
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 | switch(token) {      case START\_OBJECT:          genJackson.writeStartObject();          break;      case START\_ARRAY:          genJackson.writeStartArray();          break;      case END\_ARRAY:      case END\_OBJECT:          genJackson.writeEnd();          break;      case FIELD\_NAME:          genJackson.writeKey(((com.fasterxml.jackson.core.JsonParser) jacksonParser).currentName());          break;      case VALUE\_FALSE:          genJackson.write(false);          break;      case VALUE\_TRUE:          genJackson.write(true);          break;                      case VALUE\_NULL:          genJackson.writeNull();          break;      case VALUE\_NUMBER\_FLOAT:      case VALUE\_NUMBER\_INT:          genJackson.write(((com.fasterxml.jackson.core.JsonParser)jacksonParser).getDecimalValue());          break;      case VALUE\_STRING:          genJackson.write(((com.fasterxml.jackson.core.JsonParser)jacksonParser).getText());          break;      default:          throw new [IllegalStateException](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+illegalstateexception)(token.toString());      } |
+```css
+switch(token) {
+    case START_OBJECT:
+        genJackson.writeStartObject();
+        break;
+    case START_ARRAY:
+        genJackson.writeStartArray();
+        break;
+    case END_ARRAY:
+    case END_OBJECT:
+        genJackson.writeEnd();
+        break;
+    case FIELD_NAME:
+        genJackson.writeKey(((com.fasterxml.jackson.core.JsonParser) jacksonParser).currentName());
+        break;
+    case VALUE_FALSE:
+        genJackson.write(false);
+        break;
+    case VALUE_TRUE:
+        genJackson.write(true);
+        break;
+    case VALUE_NULL:
+        genJackson.writeNull();
+        break;
+    case VALUE_NUMBER_FLOAT:
+    case VALUE_NUMBER_INT:
+        genJackson.write(((com.fasterxml.jackson.core.JsonParser)jacksonParser).getDecimalValue());
+        break;
+    case VALUE_STRING:
+        genJackson.write(((com.fasterxml.jackson.core.JsonParser)jacksonParser).getText());
+        break;
+    default:
+        throw new IllegalStateException(token.toString());
+    }
+```
 
 I checked out the new [Quarkus 1.13.2.Final released – Oracle JDBC driver extension](https://quarkus.io/blog/quarkus-1-13-2-final-released/), bug fixes, and there’s no SODA support.
 

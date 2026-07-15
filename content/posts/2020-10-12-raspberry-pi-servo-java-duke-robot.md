@@ -78,15 +78,73 @@ PWM or Signal Pin of the Servo Motor must be connected to the PWM Output of the 
 
 ## PI4J
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 | import com.pi4j.io.gpio.GpioController;  import com.pi4j.io.gpio.GpioFactory;  import com.pi4j.io.gpio.GpioPinPwmOutput;  import com.pi4j.io.gpio.Pin;  import com.pi4j.io.gpio.RaspiPin;  import com.pi4j.util.CommandArgumentParser;      public class TestPwmServoMotor {        public static void main([String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string)[] args) throws [InterruptedException](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+interruptedexception) {          pwm(args);      }        /\*\*       \* @param args       \* @throws InterruptedException       \*/      public static void pwm([String](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+string)[] args) throws [InterruptedException](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+interruptedexception){            final GpioController gpio = GpioFactory.getInstance();            Pin pin = CommandArgumentParser.getPin(          RaspiPin.class,              RaspiPin.GPIO\_00,            args);                       GpioPinPwmOutput pwm = gpio.provisionSoftPwmOutputPin(pin);          pwm.setPwmRange(100);            int sleep = 1000;          for(int i = 0 ;i<10;i++){               pwm.setPwm(25);              [System](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+system).out.println("PWM rate is: " + pwm.getPwm());              [Thread](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+thread).sleep(sleep);                pwm.setPwm(15);              [System](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+system).out.println("PWM rate is: " + pwm.getPwm());              [Thread](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+thread).sleep(sleep);                pwm.setPwm(6);              [System](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+system).out.println("PWM rate is: " + pwm.getPwm());              [Thread](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+thread).sleep(sleep);          }          gpio.shutdown();                  [System](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+system).out.println("pwm end");        }  } |
+```java
+import com.pi4j.io.gpio.GpioController;
+import com.pi4j.io.gpio.GpioFactory;
+import com.pi4j.io.gpio.GpioPinPwmOutput;
+import com.pi4j.io.gpio.Pin;
+import com.pi4j.io.gpio.RaspiPin;
+import com.pi4j.util.CommandArgumentParser;
+public class TestPwmServoMotor {
+    public static void main(String[] args) throws InterruptedException {
+        pwm(args);
+    }
+    /**
+     * @param args
+     * @throws InterruptedException
+     */
+    public static void pwm(String[] args) throws InterruptedException{
+        final GpioController gpio = GpioFactory.getInstance();
+        Pin pin = CommandArgumentParser.getPin(
+        RaspiPin.class,
+        RaspiPin.GPIO_00,
+        args);
+        GpioPinPwmOutput pwm = gpio.provisionSoftPwmOutputPin(pin);
+        pwm.setPwmRange(100);
+        int sleep = 1000;
+        for(int i = 0 ;i<10;i++){
+             pwm.setPwm(25);
+            System.out.println("PWM rate is: " + pwm.getPwm());
+            Thread.sleep(sleep);
+            pwm.setPwm(15);
+            System.out.println("PWM rate is: " + pwm.getPwm());
+            Thread.sleep(sleep);
+            pwm.setPwm(6);
+            System.out.println("PWM rate is: " + pwm.getPwm());
+            Thread.sleep(sleep);
+        }
+        gpio.shutdown();
+        System.out.println("pwm end");
+    }
+}
+```
 
 ## Python
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 | import RPi.GPIO as GPIO  import time      control = [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10]  servo = 22  GPIO.setmode(GPIO.BOARD)  GPIO.setup(servo,GPIO.OUT)  p=GPIO.PWM(servo,50)  p.start(2.5)    try:         while True:             for x in range(11):               p.ChangeDutyCycle(control[x])               time.sleep(0.03)               print x                          for x in range(9,0,-1):               p.ChangeDutyCycle(control[x])               time.sleep(0.03)               print x               except KeyboardInterrupt:      GPIO.cleanup() |
+```python
+import RPi.GPIO as GPIO
+import time
+control = [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10]
+servo = 22
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(servo,GPIO.OUT)
+p=GPIO.PWM(servo,50)
+p.start(2.5)
+try:
+       while True:
+           for x in range(11):
+             p.ChangeDutyCycle(control[x])
+             time.sleep(0.03)
+             print x
+
+           for x in range(9,0,-1):
+             p.ChangeDutyCycle(control[x])
+             time.sleep(0.03)
+             print x
+
+except KeyboardInterrupt:
+    GPIO.cleanup()
+```
 
 ## Arduino
 
@@ -94,9 +152,31 @@ And of course, you can do this demo with an Arduino as well.
 
 ![](/images/wp/2020/10/ff8581a2-ea36-49d4-b773-13b249ddf03f_0mIWhxt1nh.png)
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 | #include <Servo.h>      Servo servo    void setup() {    servo.attach(9);      }  void loop() {    servo.write(0);    delay(500);    delay(10000);    servo.write(90);    delay(500);    delay(10000);    servo.write(180);    delay(500);    delay(10000);    servo.write(90);    delay(500);    delay(10000);    servo.write(0);    delay(500);    delay(10000);  } |
+```
+#include <Servo.h>
+Servo servo
+void setup() {
+  servo.attach(9);
+
+}
+void loop() {
+  servo.write(0);
+  delay(500);
+  delay(10000);
+  servo.write(90);
+  delay(500);
+  delay(10000);
+  servo.write(180);
+  delay(500);
+  delay(10000);
+  servo.write(90);
+  delay(500);
+  delay(10000);
+  servo.write(0);
+  delay(500);
+  delay(10000);
+}
+```
 
 ## Results
 

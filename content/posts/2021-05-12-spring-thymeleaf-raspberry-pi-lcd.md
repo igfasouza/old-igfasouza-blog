@@ -58,13 +58,31 @@ Many tools including GIMP can save an image as XBM. A nice step-by-step instruct
 
 ## Code
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 10 11 12 13 | // - MOSI = 10     // - SCLK = 11     // - CE1 = 7     config = GlcdConfigBuilder         //Use ST7920 - 128 x 64 display, SPI 4-wire Hardware         .create(Glcd.ST7920.D\_128x64, GlcdCommProtocol.SPI\_SW\_4WIRE\_ST7920)         //Set to 180 rotation         .option(GlcdOption.ROTATION, GlcdRotation.ROTATION\_180)         .option(GlcdOption.PROVIDER, [Provider](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+provider).SYSTEM)         .mapPin(GlcdPin.SPI\_MOSI, 19)         .mapPin(GlcdPin.SPI\_CLOCK, 13)         .mapPin(GlcdPin.CS, 26)         .build(); |
+```
+// - MOSI = 10
+   // - SCLK = 11
+   // - CE1 = 7
+   config = GlcdConfigBuilder
+       //Use ST7920 - 128 x 64 display, SPI 4-wire Hardware
+       .create(Glcd.ST7920.D_128x64, GlcdCommProtocol.SPI_SW_4WIRE_ST7920)
+       //Set to 180 rotation
+       .option(GlcdOption.ROTATION, GlcdRotation.ROTATION_180)
+       .option(GlcdOption.PROVIDER, Provider.SYSTEM)
+       .mapPin(GlcdPin.SPI_MOSI, 19)
+       .mapPin(GlcdPin.SPI_CLOCK, 13)
+       .mapPin(GlcdPin.CS, 26)
+       .build();
+```
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 | private static byte[] encodeToByteArray(int[] bits) {          [BitSet](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+bitset) bitSet = new [BitSet](http://www.google.com/search?hl=en&q=allinurl%3Adocs.oracle.com+javase+docs+api+bitset)(bits.length);          for (int index = 0; index < bits.length; index++) {              bitSet.set(index, bits[index] > 0);          }            return bitSet.toByteArray();      } |
+```
+private static byte[] encodeToByteArray(int[] bits) {
+        BitSet bitSet = new BitSet(bits.length);
+        for (int index = 0; index < bits.length; index++) {
+            bitSet.set(index, bits[index] > 0);
+        }
+        return bitSet.toByteArray();
+    }
+```
 
 You can get the full code on my [GitHub](https://github.com/igfasouza/Spring-Thymeleaf-Raspberry-PI-LCD).
 

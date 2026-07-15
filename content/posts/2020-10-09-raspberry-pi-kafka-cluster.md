@@ -41,33 +41,43 @@ You should do this in all Raspberry PIs.
 
 **1) Zookeeper**
 
-|  |  |
-| --- | --- |
-| 1 | wget https://downloads.apache.org/zookeeper/zookeeper-3.6.1/apache-zookeeper-3.6.1-bin.tar.gz |
+```bash
+wget https://downloads.apache.org/zookeeper/zookeeper-3.6.1/apache-zookeeper-3.6.1-bin.tar.gz
+```
 
 Modify the “*conf/zoo.cfg*” with;
 
-|  |  |
-| --- | --- |
-| 1 2 3 4 5 6 7 8 9 | dataDir=/opt/zookeeper\_data  tickTime=2000  initLimit=10  syncLimit=5  dataDir=/var/zookeeper  clientPort=2181  server.1=192.168.0.18:2888:3888  server.2=192.168.0.15:2888:3888  server.3=192.168.0.16:2888:3888 |
+```
+dataDir=/opt/zookeeper_data
+tickTime=2000
+initLimit=10
+syncLimit=5
+dataDir=/var/zookeeper
+clientPort=2181
+server.1=192.168.0.18:2888:3888
+server.2=192.168.0.15:2888:3888
+server.3=192.168.0.16:2888:3888
+```
 
 create a file “*myid*” and the file should have only the id of the zookeeper node.  
 I use 1, 2 and 3
 
 Run this under the zookeeper’s root folder to start the Zookeeper service.
 
-|  |  |
-| --- | --- |
-| 1 | ./bin/zkServer.sh start > /dev/null 2>&1 & |
+```
+./bin/zkServer.sh start > /dev/null 2>&1 &
+```
 
 **2) Kafka**
 
 I downloaded the most recent stable version  
 Modify the “*config/server.properties*” with:
 
-|  |  |
-| --- | --- |
-| 1 2 3 | broker.id=1  port=9092  host.name=192.168.0.10 zookeeper.connect=192.168.0.18:2181,192.168.0.15:2181,192.168.0.16:2181 |
+```
+broker.id=1
+port=9092
+host.name=192.168.0.10 zookeeper.connect=192.168.0.18:2181,192.168.0.15:2181,192.168.0.16:2181
+```
 
 Boker.id should be 1,2 and 3 for each PI  
 Host.name is the machine IP address  
@@ -77,49 +87,50 @@ zookeeper.connect should be equals in all
 
 Update the “*bin/kafka-server-start.sh*” with:
 
-|  |  |
-| --- | --- |
-| 1 2 | export JMX\_PORT=${JMX\_PORT:-9999}  export KAFKA\_HEAP\_OPTS="-Xmx256M -Xms128M" |
+```bash
+export JMX_PORT=${JMX_PORT:-9999}
+export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+```
 
 Otherwise, JVM would complain not able to allocate the specified memory.
 
 Update “*bin/kafka-run-class.sh*” with:
 
-|  |  |
-| --- | --- |
-| 1 | KAFKA\_JVM\_PERFORMANCE\_OPTS="-client -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:+CMSScavengeBeforeRemark -XX:+DisableExplicitGC -Djava.awt.headless=true" # change -server to -client |
+```
+KAFKA_JVM_PERFORMANCE_OPTS="-client -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:+CMSScavengeBeforeRemark -XX:+DisableExplicitGC -Djava.awt.headless=true" # change -server to -client
+```
 
 You can run this to start Kafka
 
-|  |  |
-| --- | --- |
-| 1 | /opt/kafka/bin/kafka-server-start.sh -daemon /opt/kafka/config/server.properties > /dev/null 2>&1 & |
+```
+/opt/kafka/bin/kafka-server-start.sh -daemon /opt/kafka/config/server.properties > /dev/null 2>&1 &
+```
 
 And that’s it! Now you can do some basic tests.
 
 Create a topic
 
-|  |  |
-| --- | --- |
-| 1 | /opt/kafka/bin/kafka-topics.sh --create --zookeeper 192.168.0.15:9092,192.168.0.16:9092,192.168.0.18:9092  --replication-factor 1 --partitions 1 --topic test |
+```
+/opt/kafka/bin/kafka-topics.sh --create --zookeeper 192.168.0.15:9092,192.168.0.16:9092,192.168.0.18:9092  --replication-factor 1 --partitions 1 --topic test
+```
 
 Describe this topic
 
-|  |  |
-| --- | --- |
-| 1 | /opt/kafka/bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test |
+```
+/opt/kafka/bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test
+```
 
 Star a terminal producer
 
-|  |  |
-| --- | --- |
-| 1 | /opt/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test |
+```
+/opt/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+```
 
 Start a terminal consumer
 
-|  |  |
-| --- | --- |
-| 1 | /opt/kafka/bin/kafka-console-consumer.sh  --bootstrap-server localhost:9092 --topic test --from-beginning |
+```
+/opt/kafka/bin/kafka-console-consumer.sh  --bootstrap-server localhost:9092 --topic test --from-beginning
+```
 
 I put my Zookeeper and Kafka in the “*/opt*” folder, but you can put it in any path.
 
